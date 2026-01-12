@@ -1,0 +1,58 @@
+CIS 200 - Programming Fundamentals
+
+
+
+What is this class about?
+- More involved programming class
+- Java first, C# at end
+
+Class structure.
+
+background reading
+video tutorial
+2 labs
+1 project
+
+
+Syllabus.
+
+
+Canvas setup.
+
+
+GitHub account - what is git?
+
+
+
+/////////////////////////////////
+
+Java/VS Code/git setup.
+
+How to set up own computer?
+
+
+/////////////////////////////////
+
+Write Hello, world program.
+
+
+How to compile/run.
+
+
+////////////////////////////////
+
+Printing
+
+
+////////////////////////////////
+
+Lab 1 -> see whole process.
+
+
+
+How to get checked off.
+
+
+////////////////////////////////
+
+What to do rest of week.
