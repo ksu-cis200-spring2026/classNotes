@@ -1,17 +1,20 @@
 CIS 200 - Programming Fundamentals
 
 
+NO CLASS this Thursday, January 22
+
+/////////////////////////////////////////
 
 What is this class about?
 - More involved programming class
 - Java first, C# at end
 
-Class structure.
 
-background reading
-video tutorial
-2 labs
-1 project
+Class structure most weeks:
+- Background reading
+- Video tutorial (starting next week)
+- 2 labs (just one this week)
+- 1 project
 
 
 Syllabus.
@@ -33,7 +36,16 @@ How to set up own computer?
 
 /////////////////////////////////
 
-Write Hello, world program.
+Hello, world example
+
+
+
+/////////////////////////////////
+
+See how to clone repo
+
+
+See Example.java - what is it doing?
 
 
 How to compile/run.
@@ -41,16 +53,17 @@ How to compile/run.
 
 ////////////////////////////////
 
-Printing
+Variables and operations
+
+
+User input - whole numbers
+
+Printing variables
 
 
 ////////////////////////////////
 
-Lab 1 -> see whole process.
-
-
-
-How to get checked off.
+Lab 1 -> what to do, how to get checked off.
 
 
 ////////////////////////////////
