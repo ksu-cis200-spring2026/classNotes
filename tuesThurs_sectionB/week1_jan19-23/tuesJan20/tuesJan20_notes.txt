@@ -36,11 +36,6 @@ How to set up own computer?
 
 /////////////////////////////////
 
-Hello, world example
-
-
-
-/////////////////////////////////
 
 See how to clone repo
 
