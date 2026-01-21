@@ -1,5 +1,7 @@
 CIS 200 - Programming Fundamentals
 
+Julie Thornton
+
 /////////////////////////////////////////
 
 What is this class about?
@@ -20,21 +22,12 @@ Syllabus.
 Canvas setup.
 
 
-GitHub account - what is git?
-
-
 
 /////////////////////////////////
 
 Java/VS Code/git setup.
 
 How to set up own computer?
-
-
-/////////////////////////////////
-
-Hello, world example
-
 
 
 /////////////////////////////////
@@ -50,15 +43,12 @@ How to compile/run.
 
 ////////////////////////////////
 
-Variables and operations
+How to access lab assignment/repo
 
+** can't access your repository?
 
-User input - whole numbers
+** git not recognized?
 
-Printing variables
-
-
-////////////////////////////////
 
 Lab 1 -> what to do, how to get checked off.
 
