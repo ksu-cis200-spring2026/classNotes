@@ -1,0 +1,159 @@
+Lab 2: today
+
+Lab 3: Thursday
+
+Tutorial 1: due yesterday
+
+Project 2: due Friday, January 30
+
+Submission link format
+
+///////////////////////////
+
+Variables.
+
+Data types in Java.
+
+
+
+
+
+Declaring variables.
+
+
+
+
+
+Initializing/assigning variables.
+
+name = value;
+
+value is a literal, variable, or calculation
+
+
+
+Literals?
+
+
+
+
+
+
+
+
+///
+
+Operations.
+
++, -, *, /, %
+
+//suppose age was 25
+int num = age + 17 * 2; //num is now ??
+
+
+num++; // num is now??
+
+
+num *= 2; //num is now?? Equivalent statement?
+
+
+
+//////////////////////////
+
+User input.
+
+//top of the file?
+
+
+
+//connect for console input?
+
+
+
+//for each piece of input
+//print a prompt?
+
+
+
+//read in the input
+
+//for an int?
+
+
+//for a double?
+
+
+//for text?
+
+
+
+
+//////////////////////////
+
+Printing variables.
+
+int test = 17;
+System.out.println("test"); //prints?
+System.out.println(test); //prints?
+
+
+
+
+
+Control strings.
+
+%d int
+%f double
+%s String
+%c char
+
+
+
+int x = 3;
+int y = 4;
+
+Want to print: "My fraction is 3/4" in TWO different ways
+
+
+
+
+
+double example = 3.14159;
+
+Want: "Pi is 3.14"
+
+
+
+
+
+//////////////////////////
+
+Example: burgers are $6.79 each. Get number of burgers, 
+print total.
+
+
+/////////////////////////
+
+Integer division.
+
+int num = 17 / 4; //num is ?
+
+
+Modulo. %
+
+int leftover = 17 % 4;  //leftover is ?
+
+
+
+
+//////////////////////////
+
+Example: pizzas have 8 slices. Get #pizzas, #people. 
+
+Print how many slices everyone can have, 
+how many are leftover.
+
+//////////////////////////
+
+discuss Lab 2
+
