@@ -3,8 +3,22 @@ Lab 3: today
 Project 2: Friday, January 30
 
 speed factor 
+    min speed is 55
+    ask user for "speed factor": 0-9
+    3, 30%
+    this percentage of 25 is your "extra speed"
 
 recommended approach
+    first calculate the number of seconds of the drive
+
+    total seconds / seconds in a day
+    then use modulus to get how many seconds are unaccounted for
+
+
+how to leave the program
+
+return;
+
 
 /////////////////
 
@@ -16,6 +30,8 @@ int y = x + 14;
 
 <-- did I need to create a new variable?
 
+x += 14;
+
 ///////////////
 
 
@@ -23,14 +39,23 @@ Type casting
 
 double val = 3.5;
 
-int whole = val;    //ok?
+int whole = val;    //ok? will not compile
+
+COULD do:
+int whole = (int)val;  //chops off decimal, will be 3
 
 
 
 
 int top = 17;
 int bottom = 3;
-double answer = top/bottom; //what happens?
+double answer = top/bottom; //what happens? 5
+
+
+
+int top = 17;
+int bottom = 3;
+double answer = ((double)top)/bottom; 
 
 
 /////////////////
@@ -46,6 +71,7 @@ else if (x < 20) {
 
 
 What prints? 
+one
 
 
 /////////////////
@@ -59,7 +85,20 @@ if (y > 0) {
 
 --> is this OK? is there a way to simplify?
 
+if (y > 0 && y < 10) {
+    System.out.println("here");
+}
 
+
+
+if (10 < y < 20) {  //NO!
+
+}
+
+
+if (y > 10 && y < 20) {  //NO!
+
+}
 
 
 ///////////////////
@@ -75,12 +114,22 @@ Suppose "num" is a user input.
     System.out.printf("Total is: $%.2f%n", price);
 
 
-
+only see a variable inside {} where declared
 
 
 What is this trying to do? 
 
-Will it compile? 
+Will it compile?  not
+
+
+    double price;
+    if (num < 3) {
+        price = num*5.99;
+    }
+    else {
+        price = num*3.99;
+    }
+    System.out.printf("Total is: $%.2f%n", price);
 
 ////////////////////
 
@@ -100,10 +149,12 @@ Assume "x" is a user input.
 
 
     int answer;
+    System.out.printf("Answer is: %d%n", answer); //no, answer not initialized
+
     if (x < 0) {
         answer = 7;
     }
-    else if (x >= 0) { 
+    else  { 
         answer = 14;
     }
 
@@ -122,17 +173,11 @@ suppose "grade" is a user input (A/B/etc.)
 
 switch(grade) {
     case 'A':
-        System.out.println("Meets standard");
-        break;
     case 'B':
-        System.out.println("Meets standard");
-        break;
     case 'C':
         System.out.println("Meets standard");
         break;
     case 'D':
-        System.out.println("Doesn't meet standard");
-        break;
     case 'F':
         System.out.println("Doesn't meet standard");
         break;
@@ -140,6 +185,9 @@ switch(grade) {
         System.out.println("Invalid option");
         break;
 }
+
+
+if (grade == 'A' || grade == 'B' || grade == 'C')
 
 
 
