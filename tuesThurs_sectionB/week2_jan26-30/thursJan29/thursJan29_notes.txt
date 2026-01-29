@@ -96,6 +96,22 @@ if (0 < y && y < 10)
 
 Suppose "num" is a user input.
 
+    if (num < 3) {
+        double price = num*5.99;
+    }
+    else {
+        double price = num*3.99;
+    }
+    System.out.printf("Total is: $%.2f%n", price);
+
+What is this trying to do?  find a price
+
+Will it compile? no - price can't be seen in print
+
+
+
+Fix:
+
     double price;
     if (num < 3) {
         price = num*5.99;
@@ -105,13 +121,14 @@ Suppose "num" is a user input.
     }
     System.out.printf("Total is: $%.2f%n", price);
 
+
+
+
 Variable is visible inside the {} where it is declared
 
 
 
-What is this trying to do? 
 
-Will it compile? 
 
 ////////////////////
 
@@ -129,6 +146,22 @@ visible inside {} where declared
 
 Assume "x" is a user input.
 
+int answer;
+    if (x < 0) {
+        answer = 7;
+    }
+    else if (x >= 0) { 
+        answer = 14;
+    }
+
+    System.out.printf("Answer is: %d%n", answer);
+
+What is this trying to do? Will it compile?
+Calculate an answer. Won't compile - compiler thinks answer
+might not be initialized because there is no else.
+
+
+Fix:
 
     int answer;
     if (x < 0) {
@@ -141,7 +174,7 @@ Assume "x" is a user input.
     System.out.printf("Answer is: %d%n", answer);
 
 
-What is this trying to do? Will it compile?
+
 
 --> rules for initializing variables
 
@@ -150,6 +183,31 @@ What is this trying to do? Will it compile?
 ////////////////////////
 
 suppose "grade" is a user input (A/B/etc.)
+
+switch(grade) {
+    case 'A':
+        System.out.println("Meets standard");
+        break;
+    case 'B':
+        System.out.println("Meets standard");
+        break;
+    case 'C':
+        System.out.println("Meets standard");
+        break;
+    case 'D':
+        System.out.println("Doesn't meet standard");
+        break;
+    case 'F':
+        System.out.println("Doesn't meet standard");
+        break;
+    default:
+        System.out.println("Invalid option");
+        break;
+}
+
+
+
+Simplification:
 
 switch(grade) {
     case 'A':
