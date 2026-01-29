@@ -2,9 +2,24 @@ Lab 3: today
 
 Project 2: Friday, January 30
 
-speed factor 
+speed factor (0-9)
+    55 mph
+    factor / 10 to get a percentage
+    find that percentage of 25
 
 recommended approach
+    figure out total driving time in seconds
+    how many seconds they can drive in a day
+
+    60*60*max driving hours
+    
+
+    whole days: total driving time seconds / how many seconds they can drive in a day
+    unaccounted for seconds: total driving time seconds % how many seconds they can drive in a day
+
+
+To leave the program:
+    return;
 
 /////////////////
 
@@ -14,7 +29,9 @@ int x = (something, maybe from user input);
 int y = x + 14;
 
 
-<-- did I need to create a new variable?
+<-- did I need to create a new variable? No, not necessary
+
+x = x + 14;
 
 ///////////////
 
@@ -23,14 +40,19 @@ Type casting
 
 double val = 3.5;
 
-int whole = val;    //ok?
+int whole = val;    //ok? not compile
 
+
+int whole = (int)val; //whole would be 3
 
 
 
 int top = 17;
 int bottom = 3;
-double answer = top/bottom; //what happens?
+double answer = top/bottom; //what happens? answer is 5.0
+
+
+double answer = ((double)top)/bottom; //answer is 5.67
 
 
 /////////////////
@@ -46,6 +68,7 @@ else if (x < 20) {
 
 
 What prints? 
+one
 
 
 /////////////////
@@ -59,6 +82,13 @@ if (y > 0) {
 
 --> is this OK? is there a way to simplify?
 
+if (y > 0 && y < 10) {
+    System.out.println("here");
+}
+
+
+
+if (0 < y && y < 10)
 
 
 
@@ -66,15 +96,16 @@ if (y > 0) {
 
 Suppose "num" is a user input.
 
+    double price;
     if (num < 3) {
-        double price = num*5.99;
+        price = num*5.99;
     }
     else {
-        double price = num*3.99;
+        price = num*3.99;
     }
     System.out.printf("Total is: $%.2f%n", price);
 
-
+Variable is visible inside the {} where it is declared
 
 
 
@@ -103,7 +134,7 @@ Assume "x" is a user input.
     if (x < 0) {
         answer = 7;
     }
-    else if (x >= 0) { 
+    else { 
         answer = 14;
     }
 
@@ -122,17 +153,11 @@ suppose "grade" is a user input (A/B/etc.)
 
 switch(grade) {
     case 'A':
-        System.out.println("Meets standard");
-        break;
     case 'B':
-        System.out.println("Meets standard");
-        break;
     case 'C':
         System.out.println("Meets standard");
         break;
     case 'D':
-        System.out.println("Doesn't meet standard");
-        break;
     case 'F':
         System.out.println("Doesn't meet standard");
         break;
@@ -151,6 +176,7 @@ Is there a way to simplify?
 
 How could we have done the same thing with an if/else if?
 
+if (grade == 'A' || grade == 'B' || grade == 'C')
 
 
 ////////////////////////
