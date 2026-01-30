@@ -1,0 +1,88 @@
+This week:
+- Background reading
+- Tutorial 2 (due tonight, but hopefully already done)
+- Lab 4 (today), Lab 5 (Wednesday)
+- Project 3 (due Friday)
+    (note: no nested loops)
+
+////////////////////////
+
+Loops - what kinds? 
+
+
+
+
+Focus of today: while loops, for loops 
+
+
+
+
+////////////////////
+
+Write a code fragment with a while for loop that gets 10 numbers from the user 
+and prints the sum of all the even numbers.
+
+
+Scanner s = new Scanner(System.in);
+
+
+
+
+///////////////////
+
+Redo example with a for loop. Which way is better?
+
+
+////////////////////
+
+for (int i = 0; i < 10; i++) {
+    //do something
+}
+System.out.println(i);
+
+Is this OK? 
+
+
+
+
+
+
+////////////////////
+
+for loop: multiple loop counters
+
+
+for (int i = 2, j = 7; i < 5 && j < 10; i++, j+=2) {
+
+}
+
+
+
+////////////////////
+
+What's wrong?
+
+
+int count = 0;
+while (count < 10); 
+{
+    System.out.println(count);
+    count++;
+}
+
+
+////////////////////
+
+Example: factorial
+
+
+
+Add input validation
+
+
+
+////////////////////
+
+Lab 3.
+
+What is the structure?
