@@ -3,7 +3,7 @@ This week:
 - Tutorial 2 (due yesterday)
 - Lab 4 (today), Lab 5 (Thursday)
 - Project 3 (due Friday)
-    (note: no nested loops)
+    (note: no nested loops, no math libraries)
 
 ////////////////////////
 
@@ -70,6 +70,14 @@ while (count < 10);
     count++;
 }
 
+
+What happens here?
+
+count = 0;
+if (count > 10);
+{
+    System.out.println("test");
+}
 
 ////////////////////
 
