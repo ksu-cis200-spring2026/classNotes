@@ -1,0 +1,94 @@
+Project 3 due Friday
+
+- prime factorization
+- recommended approach
+- how to tell if a number is prime
+- will be deduction for wrong project/folder name
+
+
+Exam 1 is Wednesday, February 11
+
+/////////////////////////
+
+Do-while loops.
+
+do {
+    statements
+} while (condition);
+
+
+How are they different from while loops?
+
+Best situations to use a do-while?
+
+
+////////////////////////////
+
+break
+
+//What does this do?
+
+int x = 0;
+int y = 0;
+do {
+    if (x == 1) {
+        break;
+    }
+    y+=x;
+    x++;
+} while (x < 5);
+System.out.println(y);
+
+
+///////////////////////////
+
+continue
+
+
+//What does this do?
+
+int x = 0;
+int y = 0;
+do {
+    if (x == 1) {
+        continue;
+    }
+    y+=x;
+    x++;
+} while (x < 5);
+System.out.println(y);
+
+
+////////////////////////////
+
+Random numbers.
+
+import?
+
+
+create random number generator?
+
+
+
+generate random number 0-4?
+
+
+
+///////////////////
+
+Example: user enters a dice value (1-6)
+repeatedly roll a die (user presses Enter to roll)
+until user rolls that value
+
+Afterwards:
+- Print how many rolls it took
+- Print the highest roll
+- Print "you never rolled a 6", if applicable
+    ("flag" variables)
+
+///////////////////
+
+Look at lab. 
+- what kind of loop?
+- loop condition?
+- what if they roll a 1?
