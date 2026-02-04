@@ -1,12 +1,55 @@
-Project 3 due Friday
-
-- prime factorization
-- recommended approach
-- how to tell if a number is prime
-- will be deduction for wrong project/folder name
-
-
 Exam 1 is Wednesday, February 11
+
+
+Project 3 due Friday. Check file/folder names! There will
+    be a deduction for using other naming.
+
+    folder: proj3, name: Proj3.java
+
+
+What is the prime factorization of 12?
+    12 = 2*2*3
+
+What is the prime factorization of 7?
+    7 = 7
+
+
+- recommended approach to factor:
+
+num is user input
+curFactor = 2
+leftToFactor = num
+boolean prime = true
+most frequent factor: dummy (0)
+most frequent factor count: 0
+count of current factor: 0
+while (condition) 
+    if leftToFactor % curFactor is 0 (if it is a factor)
+        print something
+        divide curFactor out of leftToFactor
+        prime = false
+        increase count of frequent factor
+    else:
+        is count of current factor better than most frequent count?
+            update most frequent count, most frequent factor
+
+        increase curFactor
+        reset current factor count
+
+look at prime afterwards 
+
+
+
+
+- how to tell if a number is prime?
+
+
+
+
+- how to then find most frequent factor?
+
+
+
 
 /////////////////////////
 
@@ -18,13 +61,17 @@ do {
 
 
 How are they different from while loops?
+    always runs statements at least 
+
 
 Best situations to use a do-while?
+
+if you know will run at least once, but not how many total
 
 
 ////////////////////////////
 
-break
+break - leaves the loop
 
 //What does this do?
 
@@ -37,12 +84,13 @@ do {
     y+=x;
     x++;
 } while (x < 5);
-System.out.println(y);
+System.out.println(y); //y would be 0
 
 
 ///////////////////////////
 
-continue
+continue - skips rest of the current iteration,
+    starts on the next one (after checking condition)
 
 
 //What does this do?
@@ -50,13 +98,14 @@ continue
 int x = 0;
 int y = 0;
 do {
+    x++;
     if (x == 1) {
         continue;
     }
     y+=x;
-    x++;
 } while (x < 5);
 System.out.println(y);
+//would skip adding the 1
 
 
 ////////////////////////////
@@ -65,12 +114,17 @@ Random numbers.
 
 import?
 
+import java.util.*;
 
 create random number generator?
+
+Random r = new Random(); //do first
 
 
 
 generate random number 0-4?
+
+int val = r.nextInt(5);
 
 
 
