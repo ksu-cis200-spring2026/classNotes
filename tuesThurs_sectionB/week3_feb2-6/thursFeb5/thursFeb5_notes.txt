@@ -1,12 +1,76 @@
-Project 3 due Friday
-
-- prime factorization
-- recommended approach
-- how to tell if a number is prime
-- will be deduction for wrong project/folder name
+Exam 1 is Thursday, February 12
 
 
-Exam 1 is Wednesday, February 11
+Project 3 due Friday. Check file/folder names - 
+    will be a deduction for naming.
+
+    proj3
+    Proj3.java
+
+Prime factorization of 12?
+
+12 = 2*2*3
+
+
+Prime factorization of 7?
+
+7 = 7
+
+
+Finding prime factorization:
+
+num: user input
+factor: start at 2
+left: num
+
+while(condition):
+    if factor divides in evenly to left (using %):
+        print factor
+        divide factor out of left (update left)
+    else:
+        factor++
+
+
+How to tell if prime? last factor checked would be 
+    original input. Also would have just printed one factor.
+
+
+How to find most frequent factor?
+
+finding the biggest value of a collection of numbers
+
+keep track of the biggest you've seen so far 
+
+loop through the collection
+    see if current item > biggest
+        biggest = item
+
+
+
+
+Update:
+
+num: user input
+factor: start at 2
+left: num
+mostFreqFactor: dummy (0)
+freqFactorCount: dumy (0)
+curFactorCount: 0
+
+while(condition):
+    if factor divides in evenly to left (using %):
+        print factor
+        divide factor out of left (update left)
+        increase current factor count
+    else:
+        see if curFactorCount > freqFactorCount:
+            freqFactorCount = curFactorCount
+            mostFreqFactor = factor
+        reset curFactorCount to 0
+        factor++
+
+
+
 
 /////////////////////////
 
@@ -19,30 +83,36 @@ do {
 
 How are they different from while loops?
 
+checks condition at end
+always execute at least once 
+
 Best situations to use a do-while?
 
 
 ////////////////////////////
 
-break
+break - exits the loop
 
 //What does this do?
 
 int x = 0;
 int y = 0;
 do {
+    x++;
     if (x == 1) {
         break;
     }
     y+=x;
-    x++;
 } while (x < 5);
 System.out.println(y);
+
+immediately leaves loop, y is 0
 
 
 ///////////////////////////
 
-continue
+continue - moves to the next iteration as long
+    as condition is still true
 
 
 //What does this do?
@@ -50,14 +120,15 @@ continue
 int x = 0;
 int y = 0;
 do {
+    x++;
     if (x == 1) {
         continue;
     }
     y+=x;
-    x++;
 } while (x < 5);
 System.out.println(y);
 
+will do the sum of 2+3+4+5
 
 ////////////////////////////
 
@@ -65,30 +136,30 @@ Random numbers.
 
 import?
 
+import java.util.*;
 
 create random number generator?
+
+Random r = new Random();
 
 
 
 generate random number 0-4?
 
+int val = r.nextInt(5);
+
 
 
 ///////////////////
 
-Example: user enters a dice value (1-6)
-repeatedly roll a die (user presses Enter to roll)
-until user rolls that value
+Example: have user guess a random number
 
-Afterwards:
-- Print how many rolls it took
-- Print the highest roll
-- Print "you never rolled a 6", if applicable
-    ("flag" variables)
 
 ///////////////////
 
 Look at lab. 
-- what kind of loop?
-- loop condition?
-- what if they roll a 1?
+- rolling a dice?
+- making it pause before dice rolls?
+
+To get program to pause after prompt:
+s.nextLine();

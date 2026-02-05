@@ -2,21 +2,30 @@ import java.util.*;
 
 public class Feb5 {
     public static void main(String[] args) {
-        Scanner s = new Scanner();
+        Scanner s = new Scanner(System.in);
+        Random r = new Random();
 
-        System.out.print("Enter a dice value (1-6): ");
-        int val = s.nextInt();
+        //values of correct? What if we wanted 1-100?
+        int correct = r.nextInt(100)+1;
+
+        int guess;
+        do {
+            System.out.print("Enter a gues: ");
+            guess = s.nextInt();
+
+            if (guess > correct) {
+                System.out.println("Too high");
+            }
+            else if (guess < correct) {
+                System.out.println("Too low");
+            }
+        } while (guess != correct);
+
+        System.out.println("You guessed it!");
 
         /*
-            Example: user enters a dice value (1-6)
-            repeatedly roll a die (user presses Enter to roll)
-            until user rolls that value
-
-            Afterwards:
-            - Print how many rolls it took
-            - Print the highest roll
-            - Print "you never rolled a 6", if applicable
-                ("flag" variables)
+            Example: have user guess a random number
+            print high, low, you got it
         */
     }
 }
