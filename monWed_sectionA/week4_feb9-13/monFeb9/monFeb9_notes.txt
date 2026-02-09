@@ -1,0 +1,103 @@
+Tutorial 3 due tonight
+Lab today
+Exam 1: Wednesday, February 11 during lab time
+No project this week
+
+--> next week will have a normal structure
+(background reading, tutorial, 2 labs, project)
+
+/////////////////////////
+
+Exam 1:
+- mix of multiple choice and open-ended
+- closed notes/computers, written exam 
+
+Topics:
+- structure of a Java program file
+- printing
+- variables and operations
+- user input (String, int, double)
+- conditional statements
+- loops (including nested loops)
+
+See practice exam.
+    (work #3-5)
+
+
+Common multiple choice problem:
+- Figuring out the value of variables after pieces of code
+
+
+////////////////
+
+double val;
+
+<-- what value does val have now?
+
+
+
+/////////////////
+
+int total = 1;
+for (int i = 2; i < 7; i+=2) {
+    total += i;
+}
+
+<-- what value does i have? does not exist there
+
+
+<-- what value does total have? 
+
+//////////////////
+
+int x = 4;
+int y = 2;
+while (x < 20) {
+    x = x + y;
+    y = y + 5;
+}
+
+--> what values do x and y have here?
+
+
+///////////////////
+
+What does "iteration" mean? how many times through the loop
+How many iterations of the while loop?
+
+///////////////////
+
+Nested loops.
+
+some outer loop {
+    some inner loop {
+
+    }
+}
+
+
+What order do things happen?
+
+/////////////////////
+
+Example, print this pattern:
+
+5
+4 5
+3 4 5
+2 3 4 5
+1 2 3 4 5
+
+what's different on each? 
+for each number: 
+
+
+/////////////////////
+
+Example: make a repeatable dice game with a max score
+
+/////////////////////
+
+Lab.
+
+How to make sure you start printing an odd number?
