@@ -21,7 +21,7 @@ Topics:
 - loops (including nested loops)
 
 See practice exam.
-    (work #3-5)
+    (work #3-4)
 
 
 Common multiple choice problem:
@@ -34,7 +34,7 @@ double val;
 
 <-- what value does val have now?
 
-
+no value
 
 /////////////////
 
@@ -65,6 +65,9 @@ while (x < 20) {
 What does "iteration" mean?
 How many iterations of the while loop?
 
+a time through the loop
+#iterations = #times the loop goes
+
 ///////////////////
 
 Nested loops.
@@ -91,10 +94,28 @@ Example, print this pattern:
 what's different on each? 
 for each number: 
 
+outer loop: rows
+    inner loop: columns/elements on current row
+
+for (int i = 5; i >= 1; i--) {
+    //i is the starting number for the current row
+    for (int j = i; j <= 5; j++) {
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+
+
+/////////////////////
+
+Work practice exam #5
+
 
 /////////////////////
 
 Example: make a repeatable dice game with a max score
+
+(this would be good practice)
 
 /////////////////////
 
