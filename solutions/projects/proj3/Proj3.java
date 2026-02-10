@@ -1,3 +1,11 @@
+/**
+ * Project 3 finds the prime factorization and most
+ * frequent prime factor of an input number.
+ * 
+ * @author Julie Thornton
+ * @version Project 3
+ */
+
 import java.util.*;
 
 public class Proj3 {
