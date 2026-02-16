@@ -1,0 +1,89 @@
+Tutorial 4 due tonight
+Two labs this week (today/Wednesday)
+
+Project 4 due Friday, February 20
+
+/////////////////////////
+
+High: 50/50 (2 students)
+Average: 38/50
+
+A (45-50): 14 students
+B (40-44): 25 students
+C (35-39): 31 students
+D (30-34): 9 students
+F (below 30): 10 students
+
+
+discuss some Exam 1 problems
+
+/////////////////////////
+
+Arrays.
+
+
+How to declare a size-5 array that can hold doubles?
+
+
+
+
+What values are in it right now?
+
+
+How to put a 3.2 in the first spot and a 10.7 in the last spot?
+
+
+
+How to print the array?
+
+
+
+
+//////////////////////////
+
+Create an int array that holds the values 2,4,6,8,10
+
+First, hardcode it.
+
+
+
+Then, create it with a loop.
+
+
+//////////////////////////
+
+int x = 4;
+int y = 7;
+x = y;
+x++;
+
+What values do both variables have?
+
+//////////////////////////
+
+int[] arr = new int[5];
+int[] copy = arr;
+
+
+//can we do this?
+copy[0] = 7;
+
+
+What values are in both arrays now?
+
+//////////////////////////
+
+Example.
+
+Get 6 numbers from the user.
+
+Print whether any input number is the square of another 
+input number.
+
+//////////////////////////
+
+Lab 7 - see instructions.
+
+How to get user input?
+
+
