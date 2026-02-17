@@ -15,6 +15,8 @@ D (30-34): 9 students
 F (below 30): 10 students
 
 
+If you didn't do as well as you wanted?
+
 discuss some Exam 1 problems
 
 /////////////////////////
@@ -22,33 +24,31 @@ discuss some Exam 1 problems
 Arrays.
 
 
-How to declare a size-5 array that can hold doubles?
-
-
-
-
-What values are in it right now?
-
-
-How to put a 3.2 in the first spot and a 10.7 in the last spot?
-
-
-
-How to print the array?
-
-
-
-
-//////////////////////////
 
 Create an int array that holds the values 2,4,6,8,10
 
 First, hardcode it.
 
+int[] nums = new int[5];
+nums[0] = 2;
+..
+
+int[] nums = {2,4,6,8,10};
+
+nums[5] = 17; //will compile, but will crash
+                //when run (index out of bounds)
 
 
-Then, create it with a loop.
+How to print it?
 
+
+System.out.println(nums); //prints memory address
+
+instead:
+
+for (int i = 0; i < nums.length; i++) {
+    System.out.println(nums[i]);
+}
 
 //////////////////////////
 
@@ -75,10 +75,9 @@ What values are in both arrays now?
 
 Example.
 
-Get 6 numbers from the user.
+Get 6 numbers from the user, all in a line
 
-Print whether any input number is the square of another 
-input number.
+Print the reverse of the array
 
 //////////////////////////
 
