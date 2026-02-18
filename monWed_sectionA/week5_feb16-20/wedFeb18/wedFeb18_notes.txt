@@ -1,20 +1,41 @@
+Reminder: how to find office hours
+
+Not finishing labs?
+
+/////////////////////////////
+
 Project 4 due Friday
 
 Notes files not saved
 
-Error messages
+Error messages - be descriptive
 
 What arrays to store?
 
 Calculating dates
 
+month, day, year as integers
+
+create a String[] for the dates in that ranges
+    size is the same as the time span
+
+make a for loop to step through the dates you need to calculate
+    put month/day/year in my dates array
+        month + "/" + day + "/" + year
+    are you on the last day in december (check days in month)
+        day = 1
+        month = 1
+        year++ 
+    are you on the last day in another month (check days in month)
+        day = 1
+        month++
+    otherwise, day++
+
+have an array for the low temperatures
+
+have an array for the high temperatures
+
 Temperature ranges?
-
-/////////////////////////////
-
-Reminder: how to find office hours
-
-Not finishing labs?
 
 /////////////////////////////
 
@@ -30,6 +51,11 @@ Lab.
 1) Create a 2D array with values 1, 2, ... that can be "read" 
 like a book
 
+int cur = 1; //before loops
+
+just increase by 1 each time
+
+
 2) repeatedly left-shift each row until user wants to stop
 
 
@@ -39,6 +65,13 @@ How to left-shift?
 
 What kind of loops are needed?
 
+outer loop for the menu
+    if they do want to left-shift
+        loop through rows (i)
+            save in a temp variable the first value on that row
+            loop through all but the last column (j)
+                set each element to the one next to it
+            put my temp variable in the last column on that row
 
 
 Reminder: switching between types of input
