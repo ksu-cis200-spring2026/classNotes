@@ -1,20 +1,59 @@
 Project 4 due Friday
 
-Notes files not saved
-
-Error messages
-
-What arrays to store?
-
-Calculating dates
-
-Temperature ranges?
-
-/////////////////////////////
-
 Reminder: how to find office hours
 
 Not finishing labs?
+
+/////////////////////////////
+
+Project 4 discussion.
+
+
+Notes files not saved
+
+Error messages 
+    bad input - not descriptive
+    describe exactly what went wrong
+
+
+Calculating dates
+
+    //assuming "start" is the user input for the starting date
+    //like "12/28/25"
+    String[] pieces = start.split("/");
+    int[] startDate = new int[pieces.length];
+    for(int i = 0; i < pieces.length; i++) {
+        startDate[i] = Integer.parseInt(pieces[i]);
+    }
+    //startDate is a size 3 array
+    //startDate[0] is month, startDate[1] is the day, startDate[2] is the year
+
+    int[] days = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+
+Store dates in array (recommend string array)
+    - size is the timespan
+
+month = startDate[0]
+day = startDate[1]
+year = startDate[2] 
+
+loop to generate each new date (for loop recommended)
+    create next date month + "/" + day + "/" + year, put in the current array location
+    
+    am I on the last day in the year? (check month is 12, days[month-1] == day)
+        day = 1
+        month = 1
+        year++
+    am I on the last day of the month?
+    otherwise?
+        day++
+
+
+
+
+
+Temperature arrays?
 
 /////////////////////////////
 
@@ -39,6 +78,17 @@ How to left-shift?
 
 What kind of loops are needed?
 
+outer loop: menu loop  
+    do they want to left shift?
+        loop through rows with i(to shift each one)
+            use a temp variable to save out the first element on that row
+            loop through all but the last column with j 
+                make current element = next element
+            now put your temp variable in the last element on that row
+
 
 
 Reminder: switching between types of input
+
+After getting integer input:
+    s.nextLine();
