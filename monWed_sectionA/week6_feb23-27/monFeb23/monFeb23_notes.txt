@@ -1,0 +1,87 @@
+Tutorial 5 due tonight
+
+2 labs this week
+
+Project 5 due Friday, February 27
+    (this one is a little bigger -- start early!)
+
+//////////////////////////
+
+Strings. 
+
+String first = "hello";
+String second = "goodbye";
+
+How to print all the characters in first?
+
+
+
+
+What is this doing?
+
+for (int i = 0; i < second.length(); i++) {
+    first += second.charAt(i);
+}
+
+first will be: ?
+
+
+
+...is there a more efficient way? 
+
+
+
+
+/////////////////////////
+
+String example = "september";
+
+
+--> How to get just the "ept"?
+
+
+
+--> How to get just the "er"?
+
+
+
+--> How to get just the "s"?
+
+
+
+/////////////////////////
+
+String split.
+
+String big = "This  is a sentence.";
+
+
+--> How to get the individual words in an array?
+
+
+
+
+--> How to make sure it works with multiple spaces in a row?
+
+"\\s+" as the delimeter
+
+/////////////////////////
+
+File example - Copier.java
+
+////////////////////////
+
+Project 5 - Wordle.
+
+How to play?
+
+What do the colors mean?
+
+What do the input files mean?
+
+What to do first?
+
+
+///////////////////////
+
+Lab 9
