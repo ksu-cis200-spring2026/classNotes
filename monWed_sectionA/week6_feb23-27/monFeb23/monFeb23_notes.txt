@@ -10,25 +10,38 @@ Project 5 due Friday, February 27
 Strings. 
 
 String first = "hello";
-String second = "goodbye";
 
-How to print all the characters in first?
+How to print all the characters in first, one per line?
+
+for (int i = 0; i < first.length(); i++) {
+    System.out.println(first.charAt(i));
+}
+
+
 
 
 
 
 What is this doing?
 
+String first = "hello";
+String second = "goodbye";
 for (int i = 0; i < second.length(); i++) {
     first += second.charAt(i);
 }
 
-first will be: ?
+first will be: ? hellogoodbye
 
 
 
-...is there a more efficient way? 
+...is there a more efficient way? StringBuilder
 
+String first = "hello";
+String second = "goodbye";
+StringBuilder build = new StringBuilder(first);
+for (int i = 0; i < second.length(); i++) {
+    build.append(second.charAt(i));
+}
 
 
 
@@ -39,31 +52,60 @@ String example = "september";
 
 --> How to get just the "ept"?
 
-
+String piece = example.substring(1,4);
 
 --> How to get just the "er"?
 
+piece = example.substring(7,9);
+
+OR:
+
+piece = example.substring(7);
 
 
 --> How to get just the "s"?
 
+piece = example.substring(0,1);
 
 
 /////////////////////////
 
 String split.
 
-String big = "This  is a sentence.";
+String big = "This is a sentence.";
 
 
---> How to get the individual words in an array?
+--> How to print the individual words?
+
+String[] pieces = big.split(" ");
+for (int i = 0; i < pieces.length; i++) {
+    System.out.println(pieces[i]);
+}
+
+
+
+--> For-each loops
+
+String[] pieces = big.split(" ");
+for (String elem : pieces) {
+    System.out.println(elem);
+    elem = "test"; //won't compile!
+}
 
 
 
 
---> How to make sure it works with multiple spaces in a row?
+--> What if there are multiple spaces in a row?
 
-"\\s+" as the delimeter
+String big = "This    is a sentence.";
+
+String[] pieces = big.split("\\s+");
+for (int i = 0; i < pieces.length; i++) {
+    System.out.println(pieces[i]);
+}
+
+
+
 
 /////////////////////////
 
@@ -75,7 +117,31 @@ Project 5 - Wordle.
 
 How to play?
 
+5 letters
+
+puzzles.txt - all puzzle words
+allowed.txt - non-puzzle words that you are still
+    allowed to guess
+
+
+generate a puzzle - pick something from puzzles.txt
+
+get 6 guesses
+    guess has to be a real word (check BOTH puzzles,
+                                allowed)
+
+
 What do the colors mean?
+
+correct: raise
+guess: scare
+
+feedback: YBYYG
+
+G (green) - right letter, right position
+Y (yellow) - correct letter, wrong position
+B (black) - wrong letter
+
 
 What do the input files mean?
 
