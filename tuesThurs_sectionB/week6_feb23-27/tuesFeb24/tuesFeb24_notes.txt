@@ -13,42 +13,58 @@ String first = "hello";
 
 How to print all the characters in first, one per line?
 
+for (int i = 0; i < first.length(); i++) {
+    System.out.println(first.charAt(i));
+}
 
 
-
+///////////////////////////////////
 
 What is this doing?
 
+String first = "hello";
 String second = "goodbye";
 for (int i = 0; i < second.length(); i++) {
     first += second.charAt(i);
 }
 
-first will be: ?
+first will be: ? hellogoodbye
 
 
 
-...is there a more efficient way? 
+...is there a more efficient way? StringBuilder
 
+String first = "hello";
+String second = "goodbye";
+
+StringBuilder build = new StringBuilder();
+build.append(first);
+for (int i = 0; i < second.length(); i++) {
+    build.append(second.charAt(i));
+}
 
 
 
 /////////////////////////
 
 String example = "september";
-
+substring
 
 --> How to get just the "ept"?
-
+String piece = example.substring(1,4); //positions 1,2,3
 
 
 --> How to get just the "er"?
+piece = example.substring(7);
 
+OR
+
+piece = example.substring(7,9);
 
 
 --> How to get just the "s"?
 
-
+piece = example.substring(0,1);
 
 /////////////////////////
 
@@ -58,18 +74,42 @@ String big = "This is a sentence.";
 
 
 --> How to print the individual words?
+String[] words = big.split(" ");
 
+{"This", "is", "a", "sentence."}
 
-
-
-
---> For-each loops
-
-
-
+for (int i = 0; i < words.length; i++) {
+    System.out.println(words[i]);
+}
 
 --> What if there are multiple spaces in a row?
 
+String big = "This    is  a sentence.";
+String[] words = big.split(" ");
+
+{"This", "", "", "", "is", "", "a", "sentence."}
+
+
+Instead, do:
+
+String[] words = big.split("\\s+");
+{"This", "is", "a", "sentence."}
+
+
+
+
+How to use a for-each loop to print each? 
+
+for (String w : words) {
+    System.out.println(w);
+    w = "test"; //won't compile!
+}
+
+In general:
+
+for (type elem : array) {
+    //do something with eleme
+}
 
 
 /////////////////////////
@@ -80,13 +120,36 @@ File example - Copier.java
 
 Project 5 - Wordle.
 
-How to play?
+What do the input files mean?
+
+puzzles.txt - list of possible puzzle words
+allowed.txt - list of allowed guesses
+
+get a puzzle word 
+
+either user picks or pick a random one
+
 
 What do the colors mean?
 
-What do the input files mean?
+correct: raise
+guess: scare
+
+feedback: YBYYG
+
+G (green): correct position / correct letter
+Y (yellow): correct letter / wrong position
+B (black): letter not there
+
 
 What to do first?
+
+read in the files
+let user enter word
+loop through guesses
+    print the feedback
+
+validate the word / guess
 
 
 ///////////////////////
