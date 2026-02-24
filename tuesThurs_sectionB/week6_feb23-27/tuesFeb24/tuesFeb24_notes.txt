@@ -10,15 +10,16 @@ Project 5 due Friday, February 27
 Strings. 
 
 String first = "hello";
-String second = "goodbye";
 
-How to print all the characters in first?
+How to print all the characters in first, one per line?
+
 
 
 
 
 What is this doing?
 
+String second = "goodbye";
 for (int i = 0; i < second.length(); i++) {
     first += second.charAt(i);
 }
@@ -53,17 +54,23 @@ String example = "september";
 
 String split.
 
-String big = "This  is a sentence.";
+String big = "This is a sentence.";
 
 
---> How to get the individual words in an array?
+--> How to print the individual words?
 
 
 
 
---> How to make sure it works with multiple spaces in a row?
 
-"\\s+" as the delimeter
+--> For-each loops
+
+
+
+
+--> What if there are multiple spaces in a row?
+
+
 
 /////////////////////////
 

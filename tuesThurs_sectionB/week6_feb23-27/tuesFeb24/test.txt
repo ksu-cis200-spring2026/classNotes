@@ -1,6 +1,5 @@
-one
-two
-7 6
-5
-This is a sentence.
-End of file.
+1 2 3
+test
+this is a test
+4.27
+Hi
