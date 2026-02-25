@@ -4,13 +4,34 @@ Guesses with duplicate letters.
 
 correct: "enemy"
 guess: "geese"
-feedback: ???
+feedback: BYGBB
 
 correct: "glove"
 guess: "ledge"
-feedback: ???
+feedback: YBBYG
+
+char[] feedback
+boolean[] used
+
+first, mark off the G's
+    put a G at correct place in feedback
+    mark the same position in used to true
 
 
+then worry about Y vs B
+
+loop through guess letters (i)
+    if feedback[i] is G, continue
+
+    loop through correct letters (j)
+        //does guess[i] match with correct[j]
+        if guess[i] == correct[j] AND used[j] is still false
+            feedback[i] = 'Y'
+            used[j] = true
+            break
+
+    if feedback[i] isn't 'Y', there is no match
+        put a 'B' there
 
 /////////////////////
 
@@ -23,34 +44,45 @@ String s2 = (some user input);
 How to tell if s1 and s2 have the same characters?
 
 if (s1 == s2) {
-    //what does this do?
+    //compares memory addresses
 }
 
 
-How to compare characters?
+instead, do:
+
+if (s1.equals(s2)) {
+    //this one compares characters
+}
 
 s1 is "Apple"
 s2 is "apple"
 
-
 How to ignore case?
 
+if (s1.toLowerCase().equals(s2.toLowerCase())) {
+    //this one compares characters
+}
 
+OR: (also toUpperCase)
+
+if (s1.equalsIgnoreCase(s2) {
+    //this one compares characters
+}
 
 
 /////////////////////
-
 
 indexOf.
 
 String test = "explanation";
 
-int index1 = test.indexOf("ana"); 
+int index1 = test.indexOf("ana"); //index1 is 4 (where "ana") begins
 
-int index2 = test.indexOf("a"); 
+int index2 = test.indexOf("a"); //index2 is 4 (where the FIRST "a" begins)
 
-int index3 = test.indexOf("one"); 
-int index4 = test.indexOf("a", 5); 
+int index3 = test.indexOf("one"); //index3 is -1
+
+int index4 = test.indexOf("a", 5); //index4 is 6
 
 //////////////////////
 
@@ -80,13 +112,21 @@ Lab 10 - see penguin.html file
 <img alt="Adélie Penguin in the snow" src="adelie_penguin.jpg" height="100" width="200">
 <script src="js/main.js"></script>
 
-Goal: create an output file with the name of all image files (the src of an img element)
+Goal: create an output file with the name of all image files 
+(the src of an img element)
 
 
-Read each line
+Read each line (line)
+
     How can we know if we found an img tag?
+        use indexOf to look for "<img"
+        if it's not -1
+            use indexOf to look for src 
+            find opening " for src 
+            use indexOf to find " for src
+            use substring to grab filename
 
-    How to find the corresponding filename?
+str.indexOf("\"");
 
 
     
