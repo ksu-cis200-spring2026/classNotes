@@ -1,0 +1,25 @@
+Project 6 due Friday
+- stats file
+
+
+Exam 2 is next week (Wednesday, March 12)
+
+/////////////////////////
+
+Today:
+-Breaking project into methods
+
+/////////////////////////
+
+Hangman example
+
+/////////////////////////
+
+Lab 12
+- global Scanner for user input
+- createBoard: create array with '_'
+- printBoard: prints board to the screen
+- isFull: returns whether board is full
+- getRow: takes turn (char), gets and returns user row
+- getCol: takes turn (char), gets and returns user column
+- isWinner: takes board and turn, returns if player is winner
