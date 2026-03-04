@@ -1,14 +1,11 @@
 import java.util.*;
-public class Hangman 
-{
-    public static void main(String[] args)
-    {
+public class Hangman {
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter a word: ");
         String word = s.nextLine();
 
         char[] guessed = new char[word.length()];
-
         for (int i = 0; i < guessed.length; i++) {
             guessed[i] = '_';
         }
@@ -16,8 +13,7 @@ public class Hangman
         int max = 6;
         boolean wordGuessed = false;
         while (max > 0 && !wordGuessed) {
-
-            System.out.print("\nWord: ");
+            System.out.print("\nCurrent puzzle: ");
             for (int i = 0; i < guessed.length; i++) {
                 System.out.printf("%c ", guessed[i]);
             }
