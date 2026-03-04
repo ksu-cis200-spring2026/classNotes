@@ -1,49 +1,72 @@
 import java.util.*;
 public class Hangman {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter a word: ");
-        String word = s.nextLine();
+    public static Scanner s;
 
-        char[] guessed = new char[word.length()];
+    //build initial character array
+    public static char[] buildInitial(int len) {
+        char[] guessed = new char[len];
         for (int i = 0; i < guessed.length; i++) {
             guessed[i] = '_';
         }
 
+        return guessed;
+    }
+
+    public static void printPuzzle(char[] array) {
+        System.out.print("\nCurrent puzzle: ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf("%c ", array[i]);
+        }
+    }
+
+    public static boolean getGuess(char[] puzzle, String correct) {
+        System.out.print("Enter a letter: ");
+        char guess = s.nextLine().toLowerCase().charAt(0);
+
+        boolean correctGuess = false;
+        for (int i = 0; i < correct.length(); i++) {
+            if (correct.charAt(i) == guess && puzzle[i] == '_') {
+                puzzle[i] = guess;
+                correctGuess = true;
+            }
+        }
+
+        return correctGuess;
+    }
+
+    public static boolean solved(char[] puzzle) {
+        for (int i = 0; i < puzzle.length; i++) {
+            if (puzzle[i] == '_') {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        s = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String word = s.nextLine();
+
+        char[] guessed = buildInitial(word.length());
+
         int max = 6;
         boolean wordGuessed = false;
         while (max > 0 && !wordGuessed) {
-            System.out.print("\nCurrent puzzle: ");
-            for (int i = 0; i < guessed.length; i++) {
-                System.out.printf("%c ", guessed[i]);
-            }
+            printPuzzle(guessed);
 
             System.out.println("\nAttempts left: " + max);
-            System.out.print("Enter a letter: ");
-            char guess = s.nextLine().toLowerCase().charAt(0);
-            max--;
-
-            boolean correctGuess = false;
-            for (int i = 0; i < word.length(); i++) {
-                if (word.charAt(i) == guess && guessed[i] == '_') {
-                    guessed[i] = guess;
-                    correctGuess = true;
-                }
-            }
+            boolean correctGuess = getGuess(guessed, word);
 
             if (!correctGuess) {
                 System.out.println("Wrong guess!");
+                max--;
             } else {
                 System.out.println("Correct guess!");
             }
 
-            wordGuessed = true;
-            for (int i = 0; i < guessed.length; i++) {
-                if (guessed[i] == '_') {
-                    wordGuessed = false;
-                    break;
-                }
-            }
+            wordGuessed = solved(guessed);
         }
 
         if (wordGuessed) {

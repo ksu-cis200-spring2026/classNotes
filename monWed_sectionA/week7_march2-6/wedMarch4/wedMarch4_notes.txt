@@ -1,5 +1,8 @@
 Project 6 due Friday
+- project starting point
 - stats file
+    #games overall have been played
+    #games overall have been won
 
 
 Exam 2 is next week (Wednesday, March 11)
@@ -20,8 +23,26 @@ Hangman example
 Lab 12
 - global Scanner for user input
 - createBoard: create array with '_'
+
+    public static char[][] createBoard()
+
 - printBoard: prints board to the screen
+
+    public static void printBoard(char[][] board)
+
 - isFull: returns whether board is full
+
+    public static boolean isFull(char[][] board)
+
 - getRow: takes turn (char), gets and returns user row
+
+    public static int getRow(char turn)
+
 - getCol: takes turn (char), gets and returns user column
-- isWinner: takes board and turn, returns if player is winner
+
+    public static int getCol(char turn)
+
+- isWinner: takes board and turn, returns if player 
+    is winner
+
+    public static boolean isWinner(char[][] board, char turn)
