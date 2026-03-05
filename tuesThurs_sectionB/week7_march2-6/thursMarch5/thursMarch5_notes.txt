@@ -46,7 +46,7 @@ Lab 12
 
 - isFull: returns whether board is full
 
-    public static boolean isFull(char[][] borad)
+    public static boolean isFull(char[][] board)
 
 - getRow: takes turn (char), gets and returns user row
 
@@ -54,7 +54,7 @@ Lab 12
 
 - getCol: takes turn (char), gets and returns user column
 
-    public static int getRow(char turn)
+    public static int getCol(char turn)
 
 - isWinner: takes board and turn, returns if player is winner
 
