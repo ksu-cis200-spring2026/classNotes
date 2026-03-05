@@ -1,0 +1,61 @@
+Tutorial due yesterday
+Exam 2 is Wednesday, March 11
+No project this week
+
+(Next week will have a normal structure)
+
+///////////////////////////
+
+Exam 2 review
+- Closed notes/closed computers
+- Can use full time
+- Part multiple choice, part "open-ended"
+
+Topics:
+- Arrays (single dimension and 2D)
+- Strings
+- Text file IO
+- Methods
+
+
+///////////////////////////
+
+Work practice problems
+
+///////////////////////////
+
+Command-line arguments
+
+Example: want to give a word and a number as command line arguments
+
+--> print the first letter of the word
+--> print one more than the number
+
+--> problems with commas and parentheses
+
+////////////////////////////
+
+Writing methods in other classes.
+
+--> when do we include a main method? when I want to execute
+
+--> how to call methods in another file?
+
+    ClassName.methodName(params);
+
+--> how to call methods in the SAME file?
+
+    ClassName.methodName(params);
+
+    OR:
+
+    methodName(params);
+
+--> visibility modifiers
+
+public: method or variable is visible in this class and outside the class
+private: method or variable is ONLY visible in this class 
+
+////////////////////////////
+
+Lab 13.
