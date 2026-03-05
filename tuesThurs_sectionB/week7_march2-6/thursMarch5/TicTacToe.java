@@ -5,6 +5,7 @@ public class TicTacToe
     {
         Scanner s = new Scanner(System.in);
 
+        //this will become createBoard
         char[][] board = new char[3][3];
         //fill with _ for blank spots
         for (int i = 0; i < 3; i++) 
@@ -21,6 +22,7 @@ public class TicTacToe
         char turn = 'X';
 
         //print the initial board
+        //this will become printBoard
         System.out.println("Current board: ");
         for (int i = 0; i < 3; i++) 
         {
@@ -33,9 +35,13 @@ public class TicTacToe
         System.out.println();
 
         //keep playing while less than 9 moves
+        //instead, loop while puzzle isn't full
         while (moves < 9) {
+            //this becomes getRow
             System.out.printf("%c, enter row: ", turn);
             int row = s.nextInt();
+
+            //this becomes getCol
             System.out.printf("%c, enter column: ", turn);
             int col = s.nextInt();
 
@@ -54,6 +60,7 @@ public class TicTacToe
                 board[row][col] = turn;
 
                 //print the board
+                //this will become printBoard
                 System.out.println("Current board: ");
                 for (int i = 0; i < 3; i++) 
                 {
@@ -66,6 +73,7 @@ public class TicTacToe
                 System.out.println();
 
                 //check for a winner
+                //this will become winner
                 boolean win = false;
                 for (int i = 0; i < 3; i++) 
                 {
