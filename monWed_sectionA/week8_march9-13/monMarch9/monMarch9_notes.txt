@@ -13,8 +13,15 @@ Exam 2 review
 
 Topics:
 - Arrays (single dimension and 2D)
-- Strings
-- Text file IO
+- Strings (charAt, substring, indexOf, length,
+    equals, split)
+- Text file IO 
+    import java.io.*;
+    throws IOException
+    connect to input/output file (Scanner/PrintWriter)
+    read from file (use nextLine, hasNext)
+    write to a file (print/println)
+    close the connection
 - Methods
 
 
@@ -39,12 +46,19 @@ Command-line arguments with parentheses, commas:
 Writing methods in other classes.
 
 --> when do we include a main method? 
+    only ONE file, where the program control lives
 
 --> how to call methods in another file?
+    Classname.methodName
 
 --> how to call methods in the SAME file?
+    Classname.methodName
+    methodName
 
 --> visibility modifiers
+
+    public - visible outside the class 
+    private - only visible inside the class 
 
 ////////////////////////////
 
@@ -66,3 +80,6 @@ In Vector3:
     - MODIFIES the parameter vector to be normalized
     (divide each parameter by the length)
     (need to SAVE the original length before changing the vector)
+
+    save out the old magnitude
+    take each coordinate / old magnitude
