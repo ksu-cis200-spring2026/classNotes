@@ -39,12 +39,21 @@ Command-line arguments with parentheses, commas:
 Writing methods in other classes.
 
 --> when do we include a main method? 
+    ONCE per project
 
 --> how to call methods in another file?
+    FileName.methodName(params);
 
 --> how to call methods in the SAME file?
+    methodName(params);
 
 --> visibility modifiers
+
+public static 
+
+public: I can see that method in other files
+private: I can see the method inside the file, but
+    I can't see it (or call it) from another file
 
 ////////////////////////////
 
@@ -58,11 +67,23 @@ In Vector3:
 - addVectors
     - takes two vectors (as arrays of doubles)
     - add/returns (new) sum of parameter vectors
+
+public static double[] addVectors(double[] arr1, double[] arr2)
+
 - printVector
     - takes a vector (array of doubles)
     - prints it in the format "(1.23, 4.56, 7.89)"
+
+public static void printVector(double[] arr)
+
 - normalize
     - takes a vector (as an array of doubles)
     - MODIFIES the parameter vector to be normalized
     (divide each parameter by the length)
     (need to SAVE the original length before changing the vector)
+
+CHANGES x,y,z coordinates
+
+public static void normalize(double[] arr) 
+    1) get the magnitude of arr
+    2) loop through arr, divide each element by the magnitude
