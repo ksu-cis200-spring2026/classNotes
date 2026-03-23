@@ -1,0 +1,45 @@
+Tutorial due yesterday
+Labs today and Thursday
+Project 7 due Friday, March 27
+
+////////////////////////
+
+Exam 2 results.
+
+High: ??/50
+Average: ??/50
+
+A (45-50): ?? students
+B (40-44): ?? students
+C (35-39): ?? students
+D (30-34): ?? students
+F (below 30): ?? students
+
+Discuss Exam 2
+
+////////////////////////
+
+Procedural programming
+
+Object-oriented programming
+
+/////////////////////////
+
+Why define general classes?
+
+Parts of a general class?
+
+
+////////////////////////
+
+Example: complete the Circle class
+
+Create objects, call methods
+
+////////////////////////
+
+Example: *start* the Fraction class
+
+////////////////////////
+
+Lab 14
