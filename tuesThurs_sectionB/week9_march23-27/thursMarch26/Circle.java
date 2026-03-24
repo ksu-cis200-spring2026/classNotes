@@ -2,32 +2,17 @@ public class Circle {
     //fields
     private double radius;
 
-    public static final double PI = 3.14;
-
     //constructor
-    public Circle(double radius) {
-        this.radius = radius;
-    }
-
-    public static double getPI() {
-        return PI;      
-    }
-
-    public double getRadius() {
-        return radius;
+    public Circle(double r) {
+        radius = r;
     }
 
     //operations (circumference, area)
-
     public double circumference() {
-        return 2*PI*radius;
+        return 2*3.14*radius;
     }
 
     public double area() {
-        return PI*radius*radius;
-    }
-
-    public String toString() {
-        return String.format("Radius %.2f, area %.2f", radius, area());
+        return 3.14*radius*radius;
     }
 }

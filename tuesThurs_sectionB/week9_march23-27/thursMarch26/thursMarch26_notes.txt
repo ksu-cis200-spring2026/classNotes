@@ -1,14 +1,16 @@
 Project 7 due Friday
 
-Evaluate a polynomial
+Game class setup.
 
-Add polynomials
+Reading the input file.
 
-Multiply polynomials
-
-Derivative of a polynomial
+Doing the search.
 
 ///////////////////////////////////
+
+Look at Circle example.
+    --> add "getter" methods
+
 
 static keyword.
 
