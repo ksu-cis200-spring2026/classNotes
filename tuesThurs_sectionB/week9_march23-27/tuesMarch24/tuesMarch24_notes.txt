@@ -1,21 +1,25 @@
+Exam 2 results
+
+High: 50/50 (5 students -- awesome!)
+Average: 38/50
+
+A (45-50): 30 students
+B (40-44): 20 students
+C (35-39): 17 students
+D (30-34): 7 students
+F (below 30): 15 students
+
+Discuss Exam 2
+
+////////////////////////
+
 Tutorial due yesterday
 Labs today and Thursday
 Project 7 due Friday, March 27
 
-////////////////////////
+CS majors? Group advising reminder.
 
-Exam 2 results.
 
-High: ??/50
-Average: ??/50
-
-A (45-50): ?? students
-B (40-44): ?? students
-C (35-39): ?? students
-D (30-34): ?? students
-F (below 30): ?? students
-
-Discuss Exam 2
 
 ////////////////////////
 
@@ -28,6 +32,11 @@ Object-oriented programming
 Why define general classes?
 
 Parts of a general class?
+
+1) Fields (pieces of information needed for this type)
+2) Constructor (initializes a new one of these types -
+    takes in information needed for fields)
+3) Methods to do operations
 
 
 ////////////////////////
