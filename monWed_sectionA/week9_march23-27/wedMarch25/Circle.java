@@ -7,6 +7,10 @@ public class Circle {
         radius = r;
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
     //operations (circumference, area)
     public double circumference() {
         return 2*3.14*radius;
@@ -14,5 +18,9 @@ public class Circle {
 
     public double area() {
         return 3.14*radius*radius;
+    }
+
+    public String toString() {
+        return String.format("Radius: %.2f, area: %2f%n", radius, area())
     }
 }

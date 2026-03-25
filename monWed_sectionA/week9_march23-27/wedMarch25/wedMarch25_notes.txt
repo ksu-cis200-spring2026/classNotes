@@ -5,11 +5,50 @@ CS majors: group advising reminder
 Project 7 due Friday
 
 Game class setup.
+    Fields: name, year, String[] platforms
+
+    Constructor: take info for name, year, platforms
+        initialize fields
+
+    Methods:
+        toString - not printing, returning a string
+        matchesYear, matchesPlatform, matchesName
+            (will all return a boolean)
+        getPlatforms - builds a big string of all the 
+            platforms (use StringBuilder)
+
 
 Reading the input file.
+    Done in Proj7, main method (NOT Game class)
+    Have a Game[] to store the info
+    Read in the number (first line in input file)
+        make the array be that big
+    Read in blank line (maybe inFile is our connection)
+        inFile.nextLine();
+    Use a for loop to loop #games times
+        read in current name
+        read in the year
+        create an empty StringBuilder
+        while or do while to keep reading 
+            a string until we read a blank line
+            line.equals("") OR line.length() == 0
+            every time, append the platform onto the StringBuilder:
+                build.append(line+",");
+        afterwards, call split on your StringBuilder
+            with "," as the separator
+        to convert StringBuilder into String:
+            String result = build.toString();
+        this gives you your String[] of platforms
+        create a Game object with all our info 
+        put it at the next index in the Game[]
 
 Doing the search.
+    name, year, platform
+    loop through the Game[] 
+        call the appropriate "matches" method for each
+        Game. If it matches, print it out.
 
+        
 ///////////////////////////////////
 
 Look at Circle example.
