@@ -9,6 +9,10 @@ public class Student {
 	//YOU DO THIS
 	//Write "getter" methods for each field
 
+	public String getName() {
+		return name;
+	}
+
 	public String toString() {
 		//YOU DO THIS
 		//Return a string representation for this student of the form:

@@ -1,10 +1,37 @@
 Project 7 due Friday
 
 Game class setup.
+    Fields: name, year, String[] platforms
+    Constructor
+    Operations: matchesName, matchesYear, matchesPlatform,
+        getPlatforms, toString
 
 Reading the input file.
+    your main method will have a Game[] (Game array)
+    read the #games from file
+    make your array be that big
+
+    read the blank line
+
+    for loop through game info
+        read in the name
+        read in the year
+
+        create an empty StringBuilder
+        do/while or while you haven't seen a blank line
+            read a platform, append platform + "," onto StringBuilder
+            (will want to make sure inFile.hasNext())
+        now use split with "," as separator to turn
+        your platform StringBuilder into String[]
+        create a Game object with all that info
+        games[i] = your new Game object
+        
 
 Doing the search.
+
+get search option 
+loop through Game array 
+    games[i] - call matchesName/etc.
 
 ///////////////////////////////////
 
@@ -16,18 +43,6 @@ static keyword.
 
 Redo Circle example to use static 
 
-static variables (revisit 3.14)
-
-///////////////////////////////////
-
-"this" keyword
-
-////////////////////////////////////
-
-Arrays of objects
-
-null keyword
-
 ///////////////////////////////////
 
 Object class
@@ -35,6 +50,12 @@ Object class
 toString method
 
 Add toString to Circle
+
+///////////////////////////////////
+
+Arrays of objects
+
+null keyword
 
 ////////////////////////////////////
 
