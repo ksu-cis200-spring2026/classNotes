@@ -16,17 +16,37 @@ Program design.
 
 Model-View-Controller (MVC).
 
-Model: ?
+Model: holds data, does the operations
 
-View: ?
+View: what you see (user input, output)
 
-Controller: ?
+Controller: controls things, main method for console apps
+    can read through and see overall flow of program
+    create Model and View objects
+    call methods back and forth on those objects
 
 
 ///////////////////////
 
 Exception handling.
 
+handle unexpected problems
+
+
+ONLY use exception handling if there is no other way 
+to detect the problem
+
+1) user input 
+2) files 
+
+
+try {
+    //whatever code might unexpectedly cause problems
+    //related to user input or files
+}
+catch (TypeOfException ex) {
+    //deal with the problem
+}
 
 
 Example: console ops
@@ -39,36 +59,57 @@ Shift cipher - example.
 
 "ball"
 key (0-25): 3
-"edoo"
 
-decrypt: "edoo", key 3
+Ciphertext? "edoo"
+How to decrypt? replace each with the letter 3 (or key value)
+    before
 
 
 
 encrypt "zybra"
 key: 3
-"c..."
+Ciphertext? "cbeud"
 
 
 
 
 ASCII values
 
+//'A' has ASCII value 65
 char example = 'A';
-example++; //example would be?
+example++; //example would be? 'B'
 
 
 
+Type casting between int/char.
+
+example = (char)(example + 1);
+
+///////////////////////////
 
 char letter = (some letter);
 int key = (some number, 0-25);
 
 How to encrypt letter?
 
-//is it lowercase?
+letter+=key;
+
+//letter was 'Z' (90)
+//key was 3
+//letter would be 93. SHOULD be 'C'
+//ASCII value for 'A' is 65
+if (letter > 'Z') {
+    letter -= 26;
+}
+
+//is it uppercase?
+if (letter >= 'A' && letter <= 'Z')
 
 
 
 How to decrypt letter?
 
-Exception handling?
+
+/////////////////////
+
+Look at initial lab requirements
