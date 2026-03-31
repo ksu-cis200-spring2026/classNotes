@@ -7,23 +7,10 @@ Project 8 due Friday
 /////////////////////
 
 Today:
-- Model-View-Controller
 - Exception handling
+- Model-View-Controller
 
 //////////////////////
-
-Program design.
-
-Model-View-Controller (MVC).
-
-Model: ?
-
-View: ?
-
-Controller: ?
-
-
-///////////////////////
 
 Exception handling.
 
@@ -33,42 +20,52 @@ Example: console ops
 
 /////////////////////////
 
+Program design.
+
+Model-View-Controller (MVC).
+
+Model: stores data, does operations/calculations
+
+View: user input / output
+
+Controller: control flow of program (for us, the main method)
+    calls back and forth between View and Model
+    create View and Model objects
+    calls their methods
+
+
+///////////////////////
+
 Lab 16. 
 
 Shift cipher - example.
 
 "ball"
 key (0-25): 3
-"edoo"
-
-decrypt: "edoo", key 3
+ciphertext? edoo
 
 
+
+How to decrypt?
 
 encrypt "zybra"
 key: 3
-"c..."
+ciphertext? cbeud
 
 
 
+Character operations.
 
-ASCII values
+char letter = 'D';
 
-char example = 'A';
-example++; //example would be?
+//how to see if it is uppercase?
 
-
-
-
-char letter = (some letter);
-int key = (some number, 0-25);
-
-How to encrypt letter?
-
-//is it lowercase?
+if (letter >= 'A' && letter <= 'Z')
 
 
+//how to update letter to be 3 positions later?
 
-How to decrypt letter?
+letter += 3; //letter is now 'G'
 
-Exception handling?
+
+Look at start of lab, shell of Cipher class.
