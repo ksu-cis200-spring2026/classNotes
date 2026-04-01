@@ -1,0 +1,27 @@
+Project 8 due Friday
+
+Four square cipher - example
+    key1: thisisatest
+    key2: elementary
+    message: hello
+
+
+How to construct the squares?
+
+////////////////////////////////////
+
+ResizeableArray
+
+
+Make ResizeableArray of Circles
+User enters info for as many as they want
+
+Afterward, print the ones that have an area between 5-10
+
+///////////////////////
+
+MVC setup reminder
+
+///////////////////////
+
+Look at lab 17 starter files
