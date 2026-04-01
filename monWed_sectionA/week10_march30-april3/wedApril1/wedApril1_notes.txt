@@ -1,4 +1,7 @@
 Project 8 due Friday
+    Update in requirements: error handling if key 
+        contains non-alphabet letters
+
 
 Four square cipher - example
     key1: thisisatest
@@ -7,6 +10,18 @@ Four square cipher - example
 
 
 How to construct the squares?
+
+I/J issue - however
+
+Odd lengths - padding
+
+Documentation - should be documentation at the top
+    of EACH file 
+
+    constructor - put a method-style documentation block
+        at the top
+
+Input/output method structure
 
 ////////////////////////////////////
 

@@ -10,6 +10,13 @@ public class StudentView {
     //YOU DO THIS
     //Add the method printHonorRoll that takes a ResizeableArray of honor roll students and prints the information
         //for those students
+    
+    public void printHonorRoll(ResizeableArray honors) {
+        System.out.println("Honor roll: ");
+        for (int i = 0; i < honors.size(); i++) {
+            System.out.println(honors.get(i));
+        }
+    }
 
     //Add the method printWithMajor that takes a ResizeableArray of students with a particular major, the name of that major, 
         //and prints the information for those students

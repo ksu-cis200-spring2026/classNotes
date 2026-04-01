@@ -13,6 +13,20 @@ public class Lab17 {
 		}
 
 		//YOU DO THIS
+		try {
+			Scanner inFile = new Scanner(new File(args[0]));
+			while (inFile.hasNext()) {
+				String line = inFile.nextLine();
+				Student stud = readNextStudent(line);
+
+				//call addStudent on your Course with stud
+			}
+			inFile.close();
+		}
+		catch (Exception ex) {
+			//call your printError, something went wrong
+		}
+
 		//Read the student input file (which is at args[0])
 			//Use a try/catch block to TRY:
 				//Connecting to the file
