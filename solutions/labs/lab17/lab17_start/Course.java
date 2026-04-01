@@ -1,8 +1,3 @@
-//YOU DO THIS
-//Update the class to store Store students in a ResizeableArray field instead of a Student[] field
-//Modify the constructor as needed
-//Update addStude
-
 public class Course {
 	//YOU DO THIS
 	//Update the class to store students in a ResizeableArray field instead of a Student[] field
