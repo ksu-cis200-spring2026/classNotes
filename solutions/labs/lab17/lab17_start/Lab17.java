@@ -3,13 +3,14 @@ import java.io.*;
 
 public class Lab17 {
 	public static void main(String[] args) {
-		if (args.length != 1) {
-			System.out.println("Run as: java Lab7 studentFilename");
-			return;
-		}
-
 		//YOU DO THIS
 		//Create Course and StudentView objects
+
+		if (args.length != 1) {
+			//YOU DO THIS
+			//Call your printError method to display an error that the input file wasn't provided
+			//Exit the program
+		}
 
 		//YOU DO THIS
 		//Read the student input file (which is at args[0])
