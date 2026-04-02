@@ -6,10 +6,29 @@ public class Lab17 {
 		//YOU DO THIS
 		//Create Course and StudentView objects
 
+		Course c = new Course();
+		StudentView v = new StudentView();
+
 		if (args.length != 1) {
 			//YOU DO THIS
 			//Call your printError method to display an error that the input file wasn't provided
 			//Exit the program
+		}
+
+		try {
+			Scanner inFile = new Scanner(new File(args[0]));
+
+			while (inFile.hasNext()) {
+				String line = inFile.nextLine();
+				Student cur = readNextStudent(line);
+
+				//add cur to your course
+			}
+			inFile.close();
+		}
+		catch (Exception ex) {
+			//call our printError method
+			//leave the program
 		}
 
 		//YOU DO THIS

@@ -14,6 +14,15 @@ public class StudentView {
     //Add the method printWithMajor that takes a ResizeableArray of students with a particular major, the name of that major, 
         //and prints the information for those students
 
+    public void printWithMajor(ResizeableArray students, String m) {
+        System.out.println(m + ":");
+
+        for (int i = 0; i < students.size(); i++) {
+            Student cur = (Student)students.get(i);
+            System.out.println(cur);
+        }
+    }
+
     //Add the method getMajor that asks the user to enter a major and then returns the user input
 
     //Add the method printError that takes an error message and prints it to the console

@@ -24,6 +24,10 @@ Afterward, print the ones that have an area between 5-10
 
 MVC setup reminder
 
+model: store data, do the computations (Student, Course)
+view: print, user input
+controller: control flow (main)
+
 ///////////////////////
 
 Look at lab 17 starter files
