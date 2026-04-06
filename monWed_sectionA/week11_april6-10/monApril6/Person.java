@@ -11,11 +11,12 @@ public class Person {
         return "Person";
     }
 
+    @Override
     public String toString() {
         return String.format("%s, age %d", name, age);
     }
 
     public void birthday() {
-        year++;
+        age++;
     }
 }

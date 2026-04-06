@@ -6,6 +6,20 @@ public class Book {
     protected int pages;
 
     //constructor to initialize fields
+    public Book(String t, String a, int y, int p) {
+        title = t;
+        author = a;
+        year = y;
+        pages = p;
+    }
+
+    public double price() {
+        //is there an extra page charge?
+        if (pages > 300) {
+            int overageBin = (pages-300)/100 + 1;
+            //change $0.25 per overageBin you are in
+        }
+    }
 
     //A price method
     //  Books published <= 2015:  
@@ -15,6 +29,10 @@ public class Book {
     // Books published more recently than 2015:
     //   base price $14.99, same page extras
 
+
+    public String toString() {
+        return String.format("%s, %...", title, ...);
+    }
     //toString has:
     //title, author, publication year, page count, and price
 }
