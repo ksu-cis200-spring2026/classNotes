@@ -1,0 +1,20 @@
+Tutorial due tonight
+Labs today and Wednesday
+Project 9 due Friday
+
+//////////////////////
+
+Inheritance.
+
+Idea?
+
+See Person class.
+
+How to make Student class?
+
+How to make Employee class?
+
+///////////////////////
+
+Lab 18.
+
