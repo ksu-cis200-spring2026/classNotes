@@ -6,7 +6,7 @@ public class Textbook extends Book {
     //and optionally include electronic access 
 
     private boolean used;
-    private electronicAccess;
+    private boolean electronicAccess;
 
     public Textbook(String t, String a, int y, int p, boolean u) {
         super(t, a, y, p);
