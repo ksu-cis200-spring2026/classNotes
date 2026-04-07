@@ -16,6 +16,6 @@ public class Person {
     }
 
     public void birthday() {
-        year++;
+        age++;
     }
 }

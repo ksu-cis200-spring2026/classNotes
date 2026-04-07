@@ -6,6 +6,31 @@ public class Book {
     protected int pages;
 
     //constructor to initialize fields
+    public Book(String t, String a, int y, int p) {
+        title = t;
+        author = a;
+        year = y;
+        pages = p;
+    }
+
+    public double price() {
+        double price;
+        if (year <= 2015) {
+            price = 9.99;
+        }
+        else {
+            price = 14.99;
+        }
+        //extra pages charge
+        if (pages > 300) {
+            int howManyExtra = (pages-300)/100 + 1;
+
+            //now multiply 0.25 by howManyExtra
+            //add that extra amount onto your price
+        }
+
+        return price;
+    }
 
     //A price method
     //  Books published <= 2015:  

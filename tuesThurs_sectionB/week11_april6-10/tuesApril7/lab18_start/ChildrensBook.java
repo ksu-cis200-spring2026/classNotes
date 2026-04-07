@@ -1,8 +1,10 @@
 //what to do with Book?
 
-public class ChildrensBook {
+public class ChildrensBook extends Book {
     //Fields for the title, author, year, pages, illustrated, hardcover
-    
+    private boolean illustrated;
+    private boolean hardcover;
+
     //constructor to initialize fields
     
     // Different Price
