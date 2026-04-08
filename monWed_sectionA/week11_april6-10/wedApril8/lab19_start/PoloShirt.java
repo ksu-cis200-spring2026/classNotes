@@ -24,7 +24,7 @@ public class PoloShirt {
         //don't change count unless new value is 1-5
     }
 
-    //override unitCost
+    //override unitCost (should be $24.99)
 
     //GET RID OF orderCost
 

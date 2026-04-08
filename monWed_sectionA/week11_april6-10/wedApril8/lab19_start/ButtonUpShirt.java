@@ -1,6 +1,8 @@
 //long-sleeved or not, come in packs of 2
 
 public class ButtonUpShirt {
+    //what fields are common with Shirt?
+    //what fields are new?
     private ShirtColor color;
     private int count;
     private boolean longSleeved;
@@ -30,6 +32,14 @@ public class ButtonUpShirt {
         }
         //don't change count unless new value is positive and even
     }
+
+    //override unitCost
+
+    //GET RID OF orderCost
+
+    //override getName
+
+    //GET RID OF toString
 
     public double orderCost() {
         double unitCost = 29.99;
