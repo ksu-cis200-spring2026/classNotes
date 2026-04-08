@@ -6,20 +6,13 @@ Project 9 due Friday
 
 RealNumber, RationalNumber, IntegerNumber
 
-top class: RealNumber
-RationalNumber extends RealNumber
-IntegerNumber extends RationalNumber
 
 
-RealNumber field:
-
-RationalNumber fields?
-
-
-IntegerNumber field?
+What types are these?
 
 
 
+///
 
 RealNumber operations:
 
@@ -27,6 +20,10 @@ RealNumber one = new RealNumber(3.2);
 RealNumber two = new RealNumber(4.5);
 //how to add one and two?
 
+
+
+
+///
 
 public class RealNumber {
     //field?
@@ -40,26 +37,40 @@ public class RealNumber {
 
 
 
+//start of RationalNumber
+public class RationalNumber {
+    //fields?
 
-RationalNumber operations (override from RealNumber):
+    //still need the constructor
 
-    public RealNumber plus(RealNumber another) {
-        //1) is another also a rational?
-
-        //2) otherwise?
-    }
-
-
-
-
-IntegerNumber operations:
-
-    public RealNumber plus(RealNumber another) {
-        
-    }
+    //what should the operations look like?
+}
 
 
 
+
+
+
+
+//start of IntegerNumber
+public class IntegerNumber {
+    //field?
+
+    //still need the constructor
+
+    //what should the operations look like?
+}
+
+
+////
+
+What to do after completing the number classes?
+
+
+
+///
+
+Next:
 
 Input is like: 
 2/6+ 3/4

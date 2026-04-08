@@ -11,6 +11,8 @@ public class ButtonUpShirt {
         longSleeved = false;
     }
 
+    //make very similar changes as you did with polo shirt
+
     public void makeLongSleeved() {
         longSleeved = true;
     }

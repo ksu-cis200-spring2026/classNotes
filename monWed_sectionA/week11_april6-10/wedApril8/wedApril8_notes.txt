@@ -6,20 +6,28 @@ Project 9 due Friday
 
 RealNumber, RationalNumber, IntegerNumber
 
-top class: RealNumber
+real number: any "normal" number
+    (whole, fraction, something with a decimal)
+
+
+rational number: a fraction (or anything that could 
+    be represented as a fraction)
+
+(e.g., pi is a real number but not a rational number)
+(every rational number is a real number)
+
+
+integers: whole numbers (positive, negative, or 0)
+
+(ALL integers are also rational [the number/1])
+(most rational numbers, like 3/2, can't be represented
+    as integers)
+
+///
+
+most general class: RealNumber
 RationalNumber extends RealNumber
 IntegerNumber extends RationalNumber
-
-
-RealNumber field:
-
-RationalNumber fields?
-
-
-IntegerNumber field?
-
-
-
 
 RealNumber operations:
 
@@ -27,39 +35,86 @@ RealNumber one = new RealNumber(3.2);
 RealNumber two = new RealNumber(4.5);
 //how to add one and two?
 
+RealNumber result = one.plus(two);
+
+
+///
 
 public class RealNumber {
     //field?
+    protected double value;
 
-    //constructor?
+    //constructor takes a double
 
     public RealNumber plus(RealNumber another) {
-        //how to write this?
+        return new RealNumber(value + another.value);
     }
 }
 
 
 
+//start of RationalNumber
+public class RationalNumber extends RealNumber {
+    protected int num;
+    protected int denom;
 
-RationalNumber operations (override from RealNumber):
+    //still need the constructor (take in num/denom)
 
-    public RealNumber plus(RealNumber another) {
-        //1) is another also a rational?
-
-        //2) otherwise?
-    }
-
-
-
-
-IntegerNumber operations:
+    //what should the operations look like?
 
     public RealNumber plus(RealNumber another) {
-        
+        //is another also a RationalNumber?
+        if (another instanceof RationalNumber) {
+            RationalNumber second = (RationalNumber)another;
+
+            //look at Fraction class from a couple of weeks ago
+            //find a common denominator
+            //find the new numerator
+            return new RationalNumber(pass stuff);
+        }
+        else {
+            return super.plus(another);
+        }
     }
 
+}
 
 
+
+
+
+
+
+//start of IntegerNumber
+public class IntegerNumber extends RationalNumber {
+    //inherits num and denom 
+
+    public IntegerNumber(int number) {
+        super(number, 1);
+
+        //use the num field as the value of this integer
+    }
+
+    //what should the operations look like?
+    public RealNumber plus(RealNumber another) {
+        //see if another is an integer
+            //create and return a new IntegerNumber
+        //otherwise, call plus in RationalNumber
+            super.plus(another);
+    }
+}
+
+
+////
+
+What to do after completing the number classes?
+
+
+Test with creating your own number objects, calling methods
+
+///
+
+Next:
 
 Input is like: 
 2/6+ 3/4
@@ -67,13 +122,13 @@ Input is like:
 
 
 
-What to look for first? 
+What to look for first? +, -, *
 
 How to get the two numbers on either side?
-
+    split or substring
 
 String piece = "0.57 ";
-String trimmed = piece.trim(); 
+String trimmed = piece.trim(); //"0.57"
 
 
 
@@ -81,14 +136,18 @@ String trimmed = piece.trim();
 Then how to tell what kind of number?
 
 real number? 
+    look for decimal
+    OR try doing Double.parseDouble (put in try/catch)
 
 rational number? 
+    look for /
 
-no slash or decimal? 
+no slash or decimal?  integer
 
 
 
-How to tell if invalid?
+How to tell if invalid? if you hit the catch
+    when trying conversions
 
 0.57 + apple
 

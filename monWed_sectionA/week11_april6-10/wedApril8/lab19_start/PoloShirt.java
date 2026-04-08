@@ -1,4 +1,5 @@
 public class PoloShirt {
+    //get rid of these fields (inherit them)
     private ShirtColor color;
     private int count;
     
@@ -7,6 +8,7 @@ public class PoloShirt {
         count = 1;
     }
 
+    //override setColor
     public void setColor(ShirtColor newColor) {
         //only black and purple allowed
         if (newColor == ShirtColor.Black || newColor == ShirtColor.Purple) {
@@ -22,13 +24,11 @@ public class PoloShirt {
         //don't change count unless new value is 1-5
     }
 
-    public double orderCost() {
-        double unitCost = 24.99;
+    //override unitCost
 
-        return count*unitCost;
-    }
+    //GET RID OF orderCost
 
-    public String toString() {
-        return String.format("Polo shirt order, color: %s, count: %d, cost: $%.2f", color, count, orderCost());
-    }
+    //override getName
+
+    //GET RID OF toString
 }

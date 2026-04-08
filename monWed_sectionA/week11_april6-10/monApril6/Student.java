@@ -25,7 +25,14 @@ public class Student extends Person {
     }
 
     public String toString() {
-        return String.format("%s, age %d, major %s, gpa %.2f", name, age, major, gpa);
+        StringBuilder build = new StringBuilder();
+
+        //append the name/age information
+        //calls toString in Person
+        build.append(super.toString());
+        build.append(String.format("major %s, gpa %.2f", major, gpa);
+
+        return build.toString();
     }
     //what do we inherit? 
 
