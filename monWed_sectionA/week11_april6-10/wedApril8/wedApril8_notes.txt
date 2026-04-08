@@ -1,0 +1,122 @@
+Calling parent versions of methods
+
+///////////////////
+
+Project 9 due Friday
+
+RealNumber, RationalNumber, IntegerNumber
+
+top class: RealNumber
+RationalNumber extends RealNumber
+IntegerNumber extends RationalNumber
+
+
+RealNumber field:
+
+RationalNumber fields?
+
+
+IntegerNumber field?
+
+
+
+
+RealNumber operations:
+
+RealNumber one = new RealNumber(3.2);
+RealNumber two = new RealNumber(4.5);
+//how to add one and two?
+
+
+public class RealNumber {
+    //field?
+
+    //constructor?
+
+    public RealNumber plus(RealNumber another) {
+        //how to write this?
+    }
+}
+
+
+
+
+RationalNumber operations (override from RealNumber):
+
+    public RealNumber plus(RealNumber another) {
+        //1) is another also a rational?
+
+        //2) otherwise?
+    }
+
+
+
+
+IntegerNumber operations:
+
+    public RealNumber plus(RealNumber another) {
+        
+    }
+
+
+
+
+Input is like: 
+2/6+ 3/4
+0.57 -4
+
+
+
+What to look for first? 
+
+How to get the two numbers on either side?
+
+
+String piece = "0.57 ";
+String trimmed = piece.trim(); 
+
+
+
+
+Then how to tell what kind of number?
+
+real number? 
+
+rational number? 
+
+no slash or decimal? 
+
+
+
+How to tell if invalid?
+
+0.57 + apple
+
+
+
+///////////////////
+
+enums
+
+public enum DayOfWeek {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
+
+DayOfWeek day = DayOfWeek.Monday;
+
+
+////////////////////
+
+Look at lab 19 start.
+
+What information is common?
+
+What operations are common?
+
+What to do with unit cost?
