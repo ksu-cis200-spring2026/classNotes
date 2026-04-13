@@ -18,7 +18,7 @@ no type casting needed
 
 Interfaces.
 
-purpose? list of requirements for any class that implements it
+purpose? list of requirements for a type of class
 
 
 - write Nameable interface
@@ -37,7 +37,17 @@ Lab.
 
 - redo student example to use ArrayList instead of ResizeableArray
     (will we need to cast?)
+
 - make View interface, implement as ConsoleView and DialogView
+    String getInput(String prompt);
+    void displayResult(String result);
+
+write ConsoleView 
+write DialogView
+
+should only have 2 methods each, very short
+
+
 
 - make StudentView have a View field, call ITS methods
     (will either use console or dialog, depending on View)
