@@ -10,15 +10,13 @@ After exam: start C#
 
 ArrayList example: collection of circles
 
-ArrayList<Type> 
 
-no type casting needed
 
 ////////////////////////////
 
 Interfaces.
 
-purpose? list of requirements for any class that implements it
+purpose? lists requirements of a class that implements the interface
 
 
 - write Nameable interface
@@ -37,7 +35,11 @@ Lab.
 
 - redo student example to use ArrayList instead of ResizeableArray
     (will we need to cast?)
-- make View interface, implement as ConsoleView and DialogView
+    
+- make View interface
+    - getInput, displayResult operations
+    - implement as ConsoleView (what will this have?)
+    - implement as DialogView (what will this have?)
 
 - make StudentView have a View field, call ITS methods
     (will either use console or dialog, depending on View)
