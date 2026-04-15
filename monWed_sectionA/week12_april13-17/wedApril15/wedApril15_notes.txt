@@ -10,45 +10,100 @@ Will start C# after exam week
 
 Project 10.
 
-How does an interface extend another interface?
-
-public interface SomeInterface extends AnotherInterface {
-
-}
-
-public class SomeClass implements SomeInterface {
-    //must complete methods from SomeInterface
-
-    //ALSO must complete methods from AnotherInterface
+public interface SomeInterface {
+    //list of requirements
 }
 
 
-JavaDoc style
+
+How to make another interface require things from SomeInterface, 
+    plus extra?
+
+public interface NewInterface extends SomeInterface {
+    //a new list of requirements
+}
+
+
+
+How to implement that new interface?
+
+public class SomeClass implements NewInterface {
+    //must fill the requiremetns of BOTH interfaces
+    //all NewInterface requirements
+    //AND all SomeInterface requirements
+}
+
+
+
+//////////////////////////////////////
 
 Creating random grocery order of 5-10 random items
 
 how to get a random number of items?
+    use Random number generator
+    somehow, generate a random number with 6 possible outcomes
+        use that to determine how many random items
+
     how to pick a random item? (there are 6 types)
+
+        use ANOTHER random number (6 possible values)
+            0 - donuts
+            1 - tortilla chips
+            etc.
 
     how to pick a random configuration?
         e.g.: donuts
-            glazed/plain
-            count 1-12
+            glazed/plain: random number with TWO possible values
+            count 1-12: another random number whose value 
+                can be 1-12
 
 
 
 ////////////////////////////
 
+Classes with no constructor
+
+public class Eggs {
+    //fields
+    //methods
+    //no constructor
+}
+
+If there is no constructor, compiler adds one:
+
+public Eggs() {
+    //initializes all fields to default for their type
+}
+
+
+To create an Eggs item:
+
+Eggs e = new Eggs();
+
+////////////////////////////
+
 TreeSet.
 
-How are things stored?
-    order?
-    duplicates?
+How are things stored? (not in a "linear" order)
+    order? sorted order 
+    duplicates? no duplicates
 
 
 What kinds of things can be added?
+    same type
+    must be things that have a defined ordering 
 
-What do we do to a class if we want to store those objects in a TreeSet?
+
+Comparable interface:
+public interface Comparable<T> {
+    int compareTo(T other);
+}
+
+
+What do we do to a class if we want to store those objects 
+    in a TreeSet?
+
+ipmlement Comparable
 
 ///////////////////////////
 
@@ -65,10 +120,12 @@ TreeSet of Shapes.
 
 --> what to do to Shape interface?
 
+public interface Shape extends Comparable<Shape> {
+    //keep what was there
+}
 
 
-
---> now what do all shapes need?
+--> now what do all shapes need? add compareTo
 
 
 
@@ -79,4 +136,11 @@ pretend we are in Rectangle:
 
 public int compareTo(Shape s) {
     //how to tell if s is another rectangle?
+
+    if (s instanceof Rectangle) {
+        //compare the two areas (kind of like ages in Person)
+    }
+    else {
+        return name().compareTo(s.name());
+    }
 }
