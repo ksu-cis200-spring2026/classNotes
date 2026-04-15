@@ -1,0 +1,98 @@
+Project 10 due Friday (last Java project)
+
+Exam 3 is Thursday, April 23
+- will post exam information
+- will do short review Tuesday, April 21
+
+Will start C# after exam week
+
+////////////////////////////
+
+Project 10.
+
+public interface SomeInterface {
+    //list of requirements
+}
+
+
+
+How to make another interface require things from SomeInterface, 
+    plus extra?
+
+
+
+
+
+How to implement that new interface?
+
+
+
+
+
+//////////////////////////////////////
+
+Creating random grocery order of 5-10 random items
+
+how to get a random number of items?
+    how to pick a random item? (there are 6 types)
+
+    how to pick a random configuration?
+        e.g.: donuts
+            glazed/plain
+            count 1-12
+
+
+
+////////////////////////////
+
+Classes with no constructor
+
+
+////////////////////////////
+
+TreeSet.
+
+How are things stored?
+    order?
+    duplicates?
+
+
+What kinds of things can be added?
+
+
+
+What do we do to a class if we want to store those objects 
+    in a TreeSet?
+
+
+///////////////////////////
+
+Goal: TreeSet of type Person.
+
+Sort by name, then by age
+
+///////////////////////////
+
+Lab.
+
+TreeSet of Shapes. 
+
+
+--> what to do to Shape interface?
+
+
+
+
+--> now what do all shapes need? 
+
+
+
+order first by shape type, then by characteristics
+
+
+pretend we are in Rectangle:
+
+public int compareTo(Shape s) {
+    //how to tell if s is another rectangle?
+
+}
