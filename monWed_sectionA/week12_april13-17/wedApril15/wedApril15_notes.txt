@@ -1,0 +1,82 @@
+Project 10 due Friday (last Java project)
+
+Exam 3 is Wednesday, April 22
+- will post exam information
+- will do short review Monday, April 20
+
+Will start C# after exam week
+
+////////////////////////////
+
+Project 10.
+
+How does an interface extend another interface?
+
+public interface SomeInterface extends AnotherInterface {
+
+}
+
+public class SomeClass implements SomeInterface {
+    //must complete methods from SomeInterface
+
+    //ALSO must complete methods from AnotherInterface
+}
+
+
+JavaDoc style
+
+Creating random grocery order of 5-10 random items
+
+how to get a random number of items?
+    how to pick a random item? (there are 6 types)
+
+    how to pick a random configuration?
+        e.g.: donuts
+            glazed/plain
+            count 1-12
+
+
+
+////////////////////////////
+
+TreeSet.
+
+How are things stored?
+    order?
+    duplicates?
+
+
+What kinds of things can be added?
+
+What do we do to a class if we want to store those objects in a TreeSet?
+
+///////////////////////////
+
+Goal: TreeSet of type Person.
+
+Sort by name, then by age
+
+///////////////////////////
+
+Lab.
+
+TreeSet of Shapes. 
+
+
+--> what to do to Shape interface?
+
+
+
+
+--> now what do all shapes need?
+
+
+
+order first by shape type, then by characteristics
+
+
+pretend we are in Rectangle:
+
+public int compareTo(Shape s) {
+    //how to tell if s is another rectangle?
+}
