@@ -20,8 +20,28 @@ Topics:
 - General classes (fields, constructors, methods, creating and
     using objects)
 - New keywords: static, null, instanceof, private, public,
-    protected, interface, implements, extends
+    protected, interface, implements, extends)
 
+
+- Arrays of objects
+- Exception handling
+    try/catch
+    when to use
+
+    throwing exceptions - when?
+        ok to always use IllegalArgumentException
+
+
+
+- MVC architecture
+    M ?
+    V ?
+    C ?
+
+
+
+
+- Inheritance, extending a class, overriding
 
 public class A {
     protected int x;
@@ -32,35 +52,11 @@ public class A {
 
 }
 
-public class B extends A {
-    //inherits everything protected and public
+--> how to extend class A?
+--> what is inherited?
+--> method overriding?
 
-    public void DoStuff() {
-        //method overriding
-    }
-}
 
-- Arrays of objects
-- Exception handling
-    try/catch
-    working with a file
-    user input
-    IOException - working with file 
-    NumberFormatException - Double.parseDouble, etc.
-    InputMismatchException - nextInt, nextDouble
-
-    throwing exceptions - do in a method if you can't 
-        return a value that makes sense or do the intended operation
-
-        can throw IllegalArgumentException
-
-- MVC architecture
-    M = model (data, calculations)
-    V = view (input/output)
-    C = controller (intermediary between model and view)
-
-- Inheritance, extending a class
-- Method overriding
 - Object class methods (toString, equals)
     
 

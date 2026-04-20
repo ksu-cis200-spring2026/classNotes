@@ -1,12 +1,22 @@
-Tutorial due yesterday
+Tutorial due today
 Exam 3 is Wednesday, April 22
 No project this week
 
 (We start C# next week. That will have you install
 .NET so you can use VS Code for C# development.)
+
 ///////////////////////////
 
 Local Scanner variables
+
+Don't do this:
+public int getInput() {
+    Scanner s = new Scanner(System.in);
+    System.out.print("Enter number: ");
+    return s.nextInt();
+}
+
+Make the Scanner a field instead (only connect ONCE to System.in)
 
 ///////////////////////////
 
@@ -22,44 +32,63 @@ Topics:
     protected, interface, implements, extends
 
 
-public class A {
-    protected int x;
-
-    public void DoStuff() {
-
-    }
-
-}
-
-public class B extends A {
-    //inherits everything protected and public
-
-    public void DoStuff() {
-        //method overriding
-    }
-}
-
 - Arrays of objects
 - Exception handling
     try/catch
-    working with a file
-    user input
-    IOException - working with file 
-    NumberFormatException - Double.parseDouble, etc.
-    InputMismatchException - nextInt, nextDouble
+    when to use: biggest uses are files, user input 
 
-    throwing exceptions - do in a method if you can't 
-        return a value that makes sense or do the intended operation
+    throwing exceptions - when?
+        we are writing a method and are supposed to return something
+        and you are in a situation where nothing you return would
+        make any sense: throw an exception 
 
-        can throw IllegalArgumentException
+        ok to always use IllegalArgumentException
+
+
 
 - MVC architecture
-    M = model (data, calculations)
-    V = view (input/output)
-    C = controller (intermediary between model and view)
+    M - model (does the work, stores the data, does calculations)
+    V - view (user input, output)
+    C - controller (connects them - for us, the main method)
 
-- Inheritance, extending a class
-- Method overriding
+
+
+
+- Inheritance, extending a class, overriding
+
+public class A {
+    protected int x;
+
+    public void doStuff() {
+
+    }
+
+}
+
+--> how to extend class A?
+
+public class B extends A {
+    //automatically get x
+    //automatically get doStuff
+
+    //override doStuff
+    public void doStuff() {
+        //do something else
+    }
+}
+
+
+B example = new B();
+b.doStuff(); //calls the one in B
+
+--> what is inherited?
+--> method overriding?
+
+
+Method overloading: multiple versions of the same method that take
+    different parameters
+
+
 - Object class methods (toString, equals)
     
 
@@ -75,8 +104,35 @@ Work some practice problems
 
 Lab goal: use HashMap to lookup/update student information by name
 
+each item has a key and a value part
+
 How to add to a HashMap?
+
+want a HashMap where keys are names and values are Person objects
+
+HashMap<String, Person> map = new HashMap<String, Person>();
+
+
+//add Bob, age 20
+//(Person constructor takes the name and age)
+map.put("Bob", new Person("Bob", 20));
+map.put("Adam", new Person("Adam", 25));
+map.put("Bob", new Person("Bob", 30)); //replaces the old Bob person object
+
 
 How to see if something is already there?
 
+if (map.containsKey("Bob")) {
+
+}
+
+
 How to loop over a HashMap?
+
+//assume Person has a toString() method
+
+for (String name : map.keySet()) {
+    //get value associated with the key 
+    Person p = map.get(name);
+    System.out.print(p);
+}
