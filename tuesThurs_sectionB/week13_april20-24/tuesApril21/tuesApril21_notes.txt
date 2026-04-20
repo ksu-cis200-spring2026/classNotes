@@ -1,0 +1,83 @@
+Tutorial due yesterday
+Exam 3 is Thursday, April 23
+No project this week
+
+(We start C# next week. That will have you install
+.NET so you can use VS Code for C# development.)
+
+///////////////////////////
+
+Local Scanner variables
+
+///////////////////////////
+
+Exam 3 review
+- Closed notes/closed computers
+- Can use full time
+- Part multiple choice, part "open-ended"
+
+Topics:
+- General classes (fields, constructors, methods, creating and
+    using objects)
+- New keywords: static, null, instanceof, private, public,
+    protected, interface, implements, extends
+
+
+public class A {
+    protected int x;
+
+    public void DoStuff() {
+
+    }
+
+}
+
+public class B extends A {
+    //inherits everything protected and public
+
+    public void DoStuff() {
+        //method overriding
+    }
+}
+
+- Arrays of objects
+- Exception handling
+    try/catch
+    working with a file
+    user input
+    IOException - working with file 
+    NumberFormatException - Double.parseDouble, etc.
+    InputMismatchException - nextInt, nextDouble
+
+    throwing exceptions - do in a method if you can't 
+        return a value that makes sense or do the intended operation
+
+        can throw IllegalArgumentException
+
+- MVC architecture
+    M = model (data, calculations)
+    V = view (input/output)
+    C = controller (intermediary between model and view)
+
+- Inheritance, extending a class
+- Method overriding
+- Object class methods (toString, equals)
+    
+
+- Interfaces, implementing an interface
+- Java collections (ArrayList, TreeSet, HashMap)
+
+
+///////////////////////////
+
+Work some practice problems
+
+///////////////////////////
+
+Lab goal: use HashMap to lookup/update student information by name
+
+How to add to a HashMap?
+
+How to see if something is already there?
+
+How to loop over a HashMap?
