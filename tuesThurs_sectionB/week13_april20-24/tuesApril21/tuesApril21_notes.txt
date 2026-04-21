@@ -66,14 +66,25 @@ public class A {
 
 ///////////////////////////
 
-Work some practice problems
+Work some practice problems?
 
 ///////////////////////////
 
+Java HashMap. 
+
+What is stored for each item?
+
+
+Want keys to be names, values to be Person objects
+
+--> add a few people 
+--> how would we find the youngest one?
+
+
+////////////////////////////
+
 Lab goal: use HashMap to lookup/update student information by name
 
-How to add to a HashMap?
+What is the file format?
 
-How to see if something is already there?
-
-How to loop over a HashMap?
+What do we do when we see a name: score?
