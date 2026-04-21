@@ -9,6 +9,16 @@ No project this week
 
 Local Scanner variables
 
+public int getNum() {
+    Scanner s = new Scanner(System.in);
+    System.out.print("Enter number: ")
+    return s.nextInt();
+}
+
+inefficient, waste of resources
+
+better: make Scanner a field, initialize once in constructor
+
 ///////////////////////////
 
 Exam 3 review
@@ -17,26 +27,28 @@ Exam 3 review
 - Part multiple choice, part "open-ended"
 
 Topics:
-- General classes (fields, constructors, methods, creating and
+- **General classes (fields, constructors, methods, creating and
     using objects)
 - New keywords: static, null, instanceof, private, public,
-    protected, interface, implements, extends)
+    protected, interface, implements, extends
 
 
 - Arrays of objects
 - Exception handling
     try/catch
-    when to use
+    when to use - user input, working with files
 
     throwing exceptions - when?
+        do in a method that is supposed to return something
+            throw an exception instead of returning a bad value
         ok to always use IllegalArgumentException
 
 
 
 - MVC architecture
-    M ?
-    V ?
-    C ?
+    M - model (data, logic/calcuations)
+    V - view (print, user input)
+    C - controller (flow, back and forth between view and model)
 
 
 
@@ -46,23 +58,47 @@ Topics:
 public class A {
     protected int x;
 
-    public void DoStuff() {
+    public void doStuff() {
 
     }
-
 }
+
+public class B extends A {
+    //automatically inherits x (protected), doStuff
+
+    //method overriding
+    public void doStuff() {
+        //does something else
+    }
+
+    public void doStuff(int num) {
+        //method overloading
+        //same method, different parameters
+    }
+}
+
+B example = new B();
+example.doStuff(); //will call the version in B
 
 --> how to extend class A?
 --> what is inherited?
 --> method overriding?
 
+(what is method overloading?)
+
 
 - Object class methods (toString, equals)
     
+- objects as references
+    Person p1 = new Person("Bob", 20);
+    Person p2 = p1;
+    p2.birthday();
 
 - Interfaces, implementing an interface
 - Java collections (ArrayList, TreeSet, HashMap)
 
+add elements, see if an element exists, to get an element,
+to loop
 
 ///////////////////////////
 
@@ -73,18 +109,56 @@ Work some practice problems?
 Java HashMap. 
 
 What is stored for each item?
+(key, value)
+
+keys: must be unique
+
 
 
 Want keys to be names, values to be Person objects
 
+HashMap<String, Person> map = new HashMap<String, Person>();
+
+//Bob, 20
+map.put("Bob", new Person("Bob", 20));
+map.put("Alice", new Person("Alice", 30));
+map.put("Fred", new Person("Fred", 10));
+map.put("Bob", new Person("Bob", 25)); //replaces the old Bob
+
+
 --> add a few people 
---> how would we find the youngest one?
+--> how would we find the oldest one?
+
+int bigAge = 0;
+Person oldestPerson = null;
+for (String name : map.keySet()) {
+    Person cur = map.get(name);
+    if (cur.getAge() > bigAge) {
+        bigAge = cur.getAge();
+        oldestPerson = cur;
+    }
+}
+System.out.print(oldestPerson);
 
 
 ////////////////////////////
 
 Lab goal: use HashMap to lookup/update student information by name
 
+HashMap called "map"
+keys: names
+values: Student object
+
 What is the file format?
 
 What do we do when we see a name: score?
+
+use containsKey to see if we've seen that name before
+    if we have HAVE seen that name:
+        call get to get the Student with that name
+        call addScore to add their new score 
+    else (we haven't seen that name):
+        create a new Student object
+        use addScore to add their score
+        add this new Student to the HashMap
+
