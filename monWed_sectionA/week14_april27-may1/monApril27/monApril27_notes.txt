@@ -1,22 +1,13 @@
-Tutorial due today (this is the last tutorial)
-Labs today and Wednesday
-Project 11 due Friday (this is the last project)
-
-**We will still have two labs next week to practice
-graphical development in C#, but no tutorial or project.
-
-/////////////////////////////////
-
 Exam 3 results
 
-High: ??/50
-Average: ??/50 
+High: 50/50 (6 students)
+Average: 38/50 
 
-A (45-50): ?? students
-B (40-44): ?? students
-C (35-39): ?? students
-D (30-34): ?? students
-F (below 30): ?? students
+A (45-50): 27 students
+B (40-44): 24 students
+C (35-39): 11 students
+D (30-34): 13 students
+F (below 30): 13 students
 
 
 **Midterm equivalent from final
@@ -31,23 +22,50 @@ Example: what if I got an 80/100 on the final?
 
 ////////////////////////
 
+Tutorial due today (this is the last tutorial)
+    --> .gitignore information
+
+Labs today and Wednesday
+Project 11 due Friday (this is the last project)
+
+**We will still have two labs next week to practice
+graphical development in C#, but no tutorial or project.
+
+////////////////////////
+
 Today: start C#
 
 ////////////////////////
 
 Reminder: make console app to get age, print it back out
 
+--> interpolated strings
+
 /////////////////////////
 
 Variables/operations?
 
+string, bool
+
+string operations
+    .Length
+    [index]
+
+
 Input/output?
 
 Conditional statements?
+    if, if/else, if/else if, switch
 
-Loops?
+Loops? 
+    for, while, enhanced for loop**, do-while
 
 Arrays?
+    array.Length
+
+    foreach (type name in collection) {
+
+    }
 
 strings?
 
@@ -55,10 +73,27 @@ strings?
 (skip files for now)
 
 Methods? 
+    capitalize
 
 General classes?
 
+public class Whatever {
+    //fields
+    private int _num;
+
+    //constructors
+
+    //methods
+}
+
 Exceptions?
+
+try {
+
+}
+catch(FormatException) {
+
+}
 
 
 //////////////////////////
