@@ -1,23 +1,13 @@
-Tutorial due yesterday (this is the last tutorial)
-Labs today and Thursday
-Project 11 due Friday (this is the last project)
-
-**We will still have two labs next week to practice
-graphical development in C#, but no tutorial or project.
-
-/////////////////////////////////
-
 Exam 3 results
 
-High: ??/50
-Average: ??/50 
+High: 50/50 (6 students)
+Average: 38/50 
 
-A (45-50): ?? students
-B (40-44): ?? students
-C (35-39): ?? students
-D (30-34): ?? students
-F (below 30): ?? students
-
+A (45-50): 27 students
+B (40-44): 24 students
+C (35-39): 11 students
+D (30-34): 13 students
+F (below 30): 13 students
 
 **Midterm equivalent from final
 **How to use "what if" in Canvas
@@ -31,41 +21,28 @@ Example: what if I got an 80/100 on the final?
 
 ////////////////////////
 
+Tutorial due yesterday (this is the last tutorial)
+Labs today and Thursday
+Project 11 due Friday (this is the last project)
+
+**We will still have two labs next week to practice
+graphical development in C#, but no tutorial or project.
+
+/////////////////////////////////
+
 Today: start C#
 
 ////////////////////////
 
 Reminder: make console app to get age, print it back out
 
+--> interpolated strings
+
 /////////////////////////
-
-Variables/operations?
-
-Input/output?
-
-Conditional statements?
-
-Loops?
-
-Arrays?
-
-strings?
-
-
-(skip files for now)
-
-Methods? 
-
-General classes?
-
-Exceptions?
-
-
-//////////////////////////
 
 Properties.
 
-Make Person class with name/age
+Make Person class with name/age, print
 
 - first use fields, getters/setters
 - then use properties
@@ -74,12 +51,33 @@ Make Person class with name/age
 
 - autoproperty syntax
 - restrict age to be 0-120
-- add Birthday method
-- make it so can only change age inside Person
 
 
 --> remove constructor
---> make name/age only able to be initialized
+--> make name only able to be initialized
+
+///////////////////////////
+
+string differences
+
+    string example = "bob";
+    char first = example[0];
+    int size = example.Length;
+
+StringBuilder differences
+    using System.Text;
+
+    .Append
+    .ToString
+
+Exception differences
+
+    try {
+
+    }
+    catch (FormatException) {
+
+    }
 
 ///////////////////////////
 
@@ -87,9 +85,28 @@ Lab 23.
 
 Convert shift cipher (lab 16) to C#
 
-string, StringBuilder differences
-
 Key property
+
+
+c += key;
+
+change to:
+
+c = (char)(c + key);
+
+
+
+Key property:
+0-25
+
+set {
+    _key = value;
+
+    while it's more than 25, subtract 26
+
+    while it's bigger than 0, add 26
+}
+
 
 Lab 16 solution is in classNotes repo if you don't have it
 
