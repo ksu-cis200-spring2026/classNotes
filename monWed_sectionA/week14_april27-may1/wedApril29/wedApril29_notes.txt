@@ -4,12 +4,27 @@ Project 11 due Friday (last one)
         int num = r.Next(4); //0,1,2, or 3
 
     instead of "instanceof", use "is"
-
+        if (item is SomeType)
 
     Changes in interfaces:
-        naming?
+        naming? prefix with capital I (IGroceryItem)
         implementing?
+            public class Apple : IGroceryItem
+
         properties
+            in one of the grocery item classes:
+
+                public double FullPrice {
+                    get {
+                        //calculates the price based on the configuration
+
+                        return price;
+                    }
+                }
+
+            in the IGroceryItem interface:
+
+                double FullPrice {get;}
 
 
 Next week:
@@ -38,7 +53,6 @@ catch (IOException) {
 
 
 
---> how to handle problems with file?
 
 
 ///////////////////////////////
@@ -52,7 +66,24 @@ List<Type> name = new List<Type>();
 
 .Add, .Count, .Contains, .Remove, etc.
 
+.Count is a property, not a method - no ()
+
 (just like ArrayList)
+
+
+Accessing an element:
+
+    in Java: list.get(index)
+
+    in C#: list[index]
+
+
+Looping over:
+    in Java:
+        for (type name : list)
+
+    in C#:
+        foreach (type name in list)
 
 
 ///////////////////////////////////
@@ -60,8 +91,7 @@ List<Type> name = new List<Type>();
 Finish Rectangle example.
 
 --> now make Length/Width properties
-    --> remove constructor (see init access)
-    --> private accessors
+    --> remove constructor 
     
 --> make Area a property
 --> override ToString
@@ -85,13 +115,21 @@ Dictionary<KeyType, ValueType> d = new Dictionary<KeyType, ValueType>();
 
 
 
+
 ValueType v = d[key];
 
 
 
-foreach(KeyType k in d.Keys)
+foreach(KeyType k in d.Keys) {
+    ValueType v = d[k];
+}
 
 
 ////////////////////////////
 
 Lab.
+
+Note: Student Name / constructor
+
+"init" is like "set" but can only be used when the object is created
+public string Name {get; init;}

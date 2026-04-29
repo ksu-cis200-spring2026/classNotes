@@ -1,6 +1,28 @@
 public class Rectangle {
-    private int _length;
-    private int _width;
+    private int _length = 1;
+    private int _width = 1;
+
+    public int Length{
+        get {
+            return _length;
+        }
+        set {
+            if (value >= 1) {
+                _length = value;
+            }
+        }
+    }
+
+    public int Width {
+        get {
+            return _width;
+        }
+        set {
+            if (value >= 1) {
+                _width = value;
+            }
+        }
+    }
 
     //make Length, Width properties
     //default Length/Width are each 1
@@ -10,12 +32,14 @@ public class Rectangle {
 
     //override ToString
 
-    public Rectangle(int l, int w) {
-        _length = l;
-        _width = w;
+    public int Area {
+        get {
+            return Length*Width;
+        }
     }
 
-    public int Area() {
-        return _length*_width;
+    public override string ToString() {
+        //return "3x4 rectangle"
+        return $"{Length}x{Width} rectangle";
     }
 }
