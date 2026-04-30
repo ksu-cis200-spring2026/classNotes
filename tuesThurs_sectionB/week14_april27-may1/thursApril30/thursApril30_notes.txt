@@ -7,9 +7,14 @@ Project 11 due Friday (last one)
 
 
     Changes in interfaces:
-        naming?
+        naming? IGroceryItem
         implementing?
-        properties
+
+            public class SomeClass : SomeInterface
+
+        properties:
+
+            double FullPrice {get;}
 
 
 Next week:
@@ -37,10 +42,6 @@ catch (IOException) {
 }
 
 
-
---> how to handle problems with file?
-
-
 ///////////////////////////////
 
 List in C#
@@ -50,7 +51,7 @@ using System.Collections.Generic;
 
 List<Type> name = new List<Type>();
 
-.Add, .Count, .Contains, .Remove, etc.
+.Add(item), .Count, .Contains(item), .Remove(item), etc.
 
 (just like ArrayList)
 
@@ -78,7 +79,7 @@ using System.Collections.Generic;
 
 Dictionary<KeyType, ValueType> d = new Dictionary<KeyType, ValueType>();
 
-.ContainsKey
+.ContainsKey(key)
 .Add(key, value)    OR    d[key] = value
     (Add will throw exception if key there)
     (using [] will add if key not there and update if key there)
@@ -89,9 +90,28 @@ ValueType v = d[key];
 
 
 
-foreach(KeyType k in d.Keys)
+foreach(KeyType k in d.Keys) {
+    ValueType v = d[k];
+}
 
 
 ////////////////////////////
 
 Lab.
+
+Student constructor / Name options
+
+1) Could keep constructor and make Name get-only:
+
+    public string Name {get;}
+
+    public Person(string n) {
+        Name = n;
+    }
+
+2) Could delete constructor and make Name get/init:
+
+    public string Name {get; init;}
+
+    //can use init to initialize the name
+    Student s = new Student(){Name = something};
