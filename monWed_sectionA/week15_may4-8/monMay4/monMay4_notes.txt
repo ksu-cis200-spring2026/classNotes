@@ -1,0 +1,72 @@
+No tutorial or project this week
+Labs today and Thursday
+
+Final exam: Friday, May 15 4:10-6:00 pm in DUE 1114
+    (I'm sorry...we drew the short straw...)
+
+**Midterm equivalent from final exam category
+
+/////////////////////////////
+
+For this week, use lab machines 
+(unless you already installed Visual Studio)
+
+/////////////////////////////
+
+See Windows Forms application creation
+
+Toolbox
+
+Label:
+TextBox:
+Button:
+
+See setting different properties
+
+Text, Name properties
+
+Naming convention: ux
+
+///////////////////////////
+
+See creating click event 
+
+
+
+Example: say Hello to each name entered
+
+--> first with MessageBox
+--> then in a label
+
+
+//////////////////////////
+
+C# Split.
+
+
+string list = "1 2 3 4";
+char[] delim = {' '};
+string[] pieces = list.Split(delim, StringSplitOptions.RemoveEmptyEntries);
+
+
+What is in pieces now?
+
+
+What if we wanted a List<int>?
+
+create a List<int>
+loop through pieces
+    convert current piece to an int
+    add to your list
+
+////////////////////////////
+
+Lab.
+
+Get list of numbers in a TextBox, read and convert to List<int>
+
+Min, Max, Average buttons
+
+Click events for each
+
+** Do Average FIRST, get totally working, then do Min/Max **

@@ -1,0 +1,135 @@
+Project 11 due Friday (last one)
+    Random numbers:
+        Random r = new Random();
+        int num = r.Next(4); //0,1,2, or 3
+
+    instead of "instanceof", use "is"
+        if (item is SomeType)
+
+    Changes in interfaces:
+        naming? prefix with capital I (IGroceryItem)
+        implementing?
+            public class Apple : IGroceryItem
+
+        properties
+            in one of the grocery item classes:
+
+                public double FullPrice {
+                    get {
+                        //calculates the price based on the configuration
+
+                        return price;
+                    }
+                }
+
+            in the IGroceryItem interface:
+
+                double FullPrice {get;}
+
+
+Next week:
+--> No tutorial or project
+--> Two labs (graphical C#) 
+
+/////////////////////////////
+
+Reading from files.
+
+
+using System.IO;
+
+try {
+    using (StreamReader r = new StreamReader(filename)) {
+        while (!r.EndOfStream) {
+            string line = r.ReadLine();
+
+            //process line
+        }
+    }
+}
+catch (IOException) {
+    handle problems
+}
+
+
+
+
+
+///////////////////////////////
+
+List in C#
+
+using System.Collections.Generic;
+
+
+List<Type> name = new List<Type>();
+
+.Add, .Count, .Contains, .Remove, etc.
+
+.Count is a property, not a method - no ()
+
+(just like ArrayList)
+
+
+Accessing an element:
+
+    in Java: list.get(index)
+
+    in C#: list[index]
+
+
+Looping over:
+    in Java:
+        for (type name : list)
+
+    in C#:
+        foreach (type name in list)
+
+
+///////////////////////////////////
+
+Finish Rectangle example.
+
+--> now make Length/Width properties
+    --> remove constructor 
+    
+--> make Area a property
+--> override ToString
+
+--> make a property for Rectangle name ("Rectangle")
+
+
+//////////////////////////////////
+
+Dictionary: like HashMap
+
+using System.Collections.Generic;
+
+
+Dictionary<KeyType, ValueType> d = new Dictionary<KeyType, ValueType>();
+
+.ContainsKey
+.Add(key, value)    OR    d[key] = value
+    (Add will throw exception if key there)
+    (using [] will add if key not there and update if key there)
+
+
+
+
+ValueType v = d[key];
+
+
+
+foreach(KeyType k in d.Keys) {
+    ValueType v = d[k];
+}
+
+
+////////////////////////////
+
+Lab.
+
+Note: Student Name / constructor
+
+"init" is like "set" but can only be used when the object is created
+public string Name {get; init;}
