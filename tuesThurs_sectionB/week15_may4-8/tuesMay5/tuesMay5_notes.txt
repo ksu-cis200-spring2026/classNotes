@@ -1,3 +1,9 @@
+Please log in to the lab machines now
+
+Then open Visual Studio 2022
+
+/////////////////////////////
+
 No tutorial or project this week
 Labs today and Thursday
 
@@ -5,10 +11,6 @@ Final exam: Tuesday, May 12 from 2:00-3:50 pm in DUE 1114
 
 **Midterm equivalent from final exam category
 
-/////////////////////////////
-
-For this week, use lab machines 
-(unless you already installed Visual Studio)
 
 /////////////////////////////
 
@@ -17,6 +19,10 @@ See Windows Forms application creation
 - Open Visual Studio 2022
 - Choose "Create new project"
 - Choose "Windows Forms App" (make sure C# is listed)
+- If your cis200repo is already cloned on the lab machines:
+    - save this as "lab25example" in the labs subfolder
+- If you don't have access to your cis200repo:
+    - save it on the desktop as "lab25example"
 - Check box "Place solution and project in same directory"
 - Click "Next", then "Create"
 
@@ -58,32 +64,42 @@ Use label and private field to display count of clicks
 
 //////////////////////////
 
-C# Split.
-
-
-string list = "1 2 3 4";
-char[] delim = {' '};
-string[] pieces = list.Split(delim, StringSplitOptions.RemoveEmptyEntries);
-
-
-What is in pieces now?
-
-
-What if we wanted a List<int>?
-
-
-////////////////////////////
-
 Lab.
 
-Get list of numbers in a TextBox, read and convert to List<int>
+NOTE: the instructions say to add/commit/push to GitHub as usual
+...but it's OK if you don't and just get checked off in person
 
+Or, you can choose "Clone a repository" when opening Visual Studio
+
+    --> then do File->New Project and save it wherever you cloned it
+
+
+///
+
+//line is like "-17 4 0 123"
 private static List<int> GetNumbers(string line)
 {
-    //how to write?
-    //how to display error message for any non-int piece?
+    char[] delim = {' '};
+    string[] pieces = line.Split(delim, StringSplitOptions.RemoveEmptyEntries);
 
+
+    //What is in pieces now? {"-17", "4", "0, "123"}
+
+
+    //What if we wanted a List<int>?
+    List<int> list = new List<int>();
+    foreach (string str in pieces) {
+        list.Add(Convert.ToInt32(str));
+    }
+
+    return list;
+
+
+    //How to display error message for any non-int piece?
 }
+
+
+
 
 
 Min, Max, Average buttons
