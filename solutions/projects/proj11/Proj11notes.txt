@@ -1,0 +1,45 @@
+1. Properties feature:
+One of the differences between C# and Java is the notion of properties. 
+In your opinion, what are some of the advantages of properties? 
+Why do you think they are not part of the Java language?
+
+Properties are nice because they encapsulate together the data of a field 
+together with enforcing any restrictions on its value. They also allow for 
+derived properties, where a property value is not associated with a field but
+instead is calculated from other data. Properties simplify the need for a field
+together with separate getter and setter methods.
+
+Java likely does not have properties because they are a form of syntactic sugar,
+similar to operator overloading. By excluding properties, it is clear in Java
+when you are accessing the value of a field and when you are calling a method.
+That distinction is blurred in C#.
+
+
+
+
+2. Other language differences: 
+What is another language difference between C# and Java 
+    (please choose something more than minor syntax differences). 
+What are the advantages of each approach?
+
+One major difference between Java and C# is how they treat value types such as 
+ints, chars, doubles, etc. In Java those are treated as primitives, and in 
+C# they are objects (along with everything else).
+
+The Java approach makes it more clear that these primitive types are value types
+as opposed to reference types, so that passing them to methods or assigning them
+to other variables is clearly working with the value of the variable as opposed 
+to the memory location.
+
+The C# approach treats ints, etc. as value types that are also objects (because
+they are really represented as structs). This allows the creation of other value 
+types, lets value types be used directly in generics, and allows method calls
+on those variables.
+
+
+
+3. Error and fix:
+Describe a build error or runtime error that took you a while to figure out. 
+How did you fix the problem?
+
+(describe any error and the fix)
