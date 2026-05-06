@@ -15,6 +15,11 @@ namespace Lab26
             //YOU DO THIS
             //Add a new Candidate whose name matches the one in 
             //your TextBox to your list of candidates
+
+            //uxName is the name of the TextBox where they type
+
+            //create a new Candidate object
+            //add it to _cands
             
             //Once the above part works, only add a new Candidate
             //if there isn't already another Candidate with the same name
@@ -36,6 +41,7 @@ namespace Lab26
 
             //YOU DO THIS
             //Vote for the selected candidate
+            //call CastVotes
 
 
             //Leave the following lines alone
@@ -49,10 +55,15 @@ namespace Lab26
             //Find the candidate with the most votes
             //Display their information in the uxResult TextBox
 
+            //look through _cands list
+            //keep track of Candidate with the most votes
+
 
             //After the above part works, handle the case
             //where the user clicks "Winner" before entering any
             //names
+
+            //uxResult - change its Tet to be the winner as a string
         }
     }
 }
