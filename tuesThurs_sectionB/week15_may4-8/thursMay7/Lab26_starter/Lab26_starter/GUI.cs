@@ -15,6 +15,11 @@ namespace Lab26
             //YOU DO THIS
             //Add a new Candidate whose name matches the one in 
             //your TextBox to your list of candidates
+
+            //get the name from uxName.Text
+
+            //make a new Candidate for that person
+            //add them to _cands
             
             //Once the above part works, only add a new Candidate
             //if there isn't already another Candidate with the same name
@@ -37,6 +42,8 @@ namespace Lab26
             //YOU DO THIS
             //Vote for the selected candidate
 
+            //call CastVote
+
 
             //Leave the following lines alone
             uxList.DataSource = null;
@@ -48,6 +55,11 @@ namespace Lab26
             //YOU DO THIS
             //Find the candidate with the most votes
             //Display their information in the uxResult TextBox
+
+            //loop through _cands list 
+            //keep track of who has the most votes
+
+            //after, put the winning candidate in uxResult.Text
 
 
             //After the above part works, handle the case

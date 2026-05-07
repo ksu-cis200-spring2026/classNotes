@@ -1,3 +1,7 @@
+We will use Visual Studio 2022 on the lab machines again
+
+/////////////////////////////
+
 Final exam: Tuesday, May 12 2:00-3:50 pm in DUE 1114
 
 **Midterm equivalent from final exam category
